@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ySakxs0xJCQlS7Cfv9nL3hMgMh+FKAiZLn+ycOvTEF7ygekmpiKs+voCfmuM4NaOGrKZ5GF7z1yU2p18SsoeHw==",
+  "success": true,
+  "projectFilePath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/Postter.Infrastructure.IoC.csproj",
+  "expectedPackageFiles": [
+    "/Users/ruslankhanov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.8/microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
