@@ -1,0 +1,9 @@
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\bin\Debug\netcoreapp3.1\Postter.Application.deps.json
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\bin\Debug\netcoreapp3.1\Postter.Application.dll
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\bin\Debug\netcoreapp3.1\Postter.Application.pdb
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\obj\Debug\netcoreapp3.1\Postter.Application.csprojAssemblyReference.cache
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\obj\Debug\netcoreapp3.1\Postter.Application.AssemblyInfoInputs.cache
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\obj\Debug\netcoreapp3.1\Postter.Application.AssemblyInfo.cs
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\obj\Debug\netcoreapp3.1\Postter.Application.csproj.CoreCompileInputs.cache
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\obj\Debug\netcoreapp3.1\Postter.Application.dll
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Application\obj\Debug\netcoreapp3.1\Postter.Application.pdb

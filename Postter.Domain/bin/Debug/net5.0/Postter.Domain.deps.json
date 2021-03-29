@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Postter.Domain/1.0.0": {
+        "dependencies": {
+          "Postter.Application": "1.0.0"
+        },
+        "runtime": {
+          "Postter.Domain.dll": {}
+        }
+      },
+      "Postter.Application/1.0.0": {
+        "runtime": {
+          "Postter.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Postter.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Postter.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
