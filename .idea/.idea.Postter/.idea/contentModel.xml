@@ -44,7 +44,11 @@
         <e p="Context" t="Include">
           <e p="UsersDbContext.cs" t="Include" />
         </e>
-        <e p="Migrations" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20210329164702_init.cs" t="Include" />
+          <e p="20210329164702_init.Designer.cs" t="Include" />
+          <e p="UserDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
@@ -82,6 +86,7 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="StaticController.cs" t="Include" />
         </e>
         <e p="Data" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
@@ -125,6 +130,9 @@
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
             <e p="Error.cshtml" t="Include" />
           </e>
+          <e p="Static" t="Include">
+            <e p="About.cshtml" t="Include" />
+          </e>
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
@@ -132,6 +140,7 @@
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="js" t="Include">
+            <e p="app.jsx" t="Include" />
             <e p="site.js" t="Include" />
           </e>
           <e p="lib" t="Include">
