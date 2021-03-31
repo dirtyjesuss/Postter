@@ -9,6 +9,7 @@ namespace Postter.Infrastructure.Data.Context
     {
         public DbSet<User> Users { get; set; }
 
+        public UserDbContext(DbContextOptions<UserDbContext> options):base(options) {}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
