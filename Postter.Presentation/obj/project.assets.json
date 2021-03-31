@@ -59,6 +59,18 @@
           }
         }
       },
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86/3.9.1": {
+        "type": "package",
+        "build": {
+          "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x86/native/ChakraCore.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "JavaScriptEngineSwitcher.Core/3.3.0": {
         "type": "package",
         "dependencies": {
@@ -882,6 +894,22 @@
         "runtime": {
           "lib/netstandard2.0/React.Core.dll": {}
         }
+      },
+      "React.Router/5.2.11": {
+        "type": "package",
+        "dependencies": {
+          "React.AspNet": "5.2.11",
+          "React.Core": "5.2.11"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/React.Router.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/React.Router.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
@@ -2729,6 +2757,26 @@
         "tools/Uninstall.ps1"
       ]
     },
+    "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86/3.9.1": {
+      "sha512": "si/4MXqMpwCjAorn26qbZehbgzekN2HdgF+/aHlR1pW1S3jwahlNGyZwypTYjONW6W7Dh1EzhkqbYtVfFE90Pg==",
+      "type": "package",
+      "path": "javascriptengineswitcher.chakracore.native.win-x86/3.9.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/JavaScriptEngineSwitcher.ChakraCore.Native.win-x86.props",
+        "chakra-core-license.txt",
+        "icon.png",
+        "javascriptengineswitcher.chakracore.native.win-x86.3.9.1.nupkg.sha512",
+        "javascriptengineswitcher.chakracore.native.win-x86.nuspec",
+        "readme.txt",
+        "runtimes/win-x86/native/ChakraCore.dll",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1"
+      ]
+    },
     "JavaScriptEngineSwitcher.Core/3.3.0": {
       "sha512": "aY5dOsBsB7MO2twVRlRcvHBFdkXptIwjSobjPis+DiUi5Cq2YU6M8ICHzaQ1ZXHl7VyWrBMV7cTn98ZrI5ZMHQ==",
       "type": "package",
@@ -3989,6 +4037,24 @@
         "logo_64.png",
         "react.core.5.2.11.nupkg.sha512",
         "react.core.nuspec"
+      ]
+    },
+    "React.Router/5.2.11": {
+      "sha512": "pR06mZWgbBEM/dDb8WXI8OwwieFxHX/WzRJlq+65RorW0ctDk+A1E15RjORZ9U6ZXtG4HltEcb8KrGAYpK6cVw==",
+      "type": "package",
+      "path": "react.router/5.2.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.0/React.Router.dll",
+        "lib/netcoreapp3.0/React.Router.pdb",
+        "lib/netcoreapp3.0/React.Router.xml",
+        "lib/netstandard2.0/React.Router.dll",
+        "lib/netstandard2.0/React.Router.pdb",
+        "lib/netstandard2.0/React.Router.xml",
+        "logo_64.png",
+        "react.router.5.2.11.nupkg.sha512",
+        "react.router.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8447,6 +8513,7 @@
       "JavaScriptEngineSwitcher.ChakraCore >= 3.9.1",
       "JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64 >= 3.9.1",
       "JavaScriptEngineSwitcher.ChakraCore.Native.win-x64 >= 3.9.1",
+      "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86 >= 3.9.1",
       "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 3.3.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.0",
@@ -8459,7 +8526,8 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
       "Postter.Infrastructure.IoC >= 1.0.0",
-      "React.AspNet >= 5.2.11"
+      "React.AspNet >= 5.2.11",
+      "React.Router >= 5.2.11"
     ]
   },
   "packageFolders": {
@@ -8515,6 +8583,10 @@
             "target": "Package",
             "version": "[3.9.1, )"
           },
+          "JavaScriptEngineSwitcher.ChakraCore.Native.win-x86": {
+            "target": "Package",
+            "version": "[3.9.1, )"
+          },
           "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
             "target": "Package",
             "version": "[3.3.0, )"
@@ -8564,6 +8636,10 @@
             "version": "[1.1.0, )"
           },
           "React.AspNet": {
+            "target": "Package",
+            "version": "[5.2.11, )"
+          },
+          "React.Router": {
             "target": "Package",
             "version": "[5.2.11, )"
           }

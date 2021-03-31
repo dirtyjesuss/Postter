@@ -23,58 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8285149-2c4b-40b5-9426-602d91c6bca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/AdvancedStringBuilder.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/JSPool.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/JavaScriptEngineSwitcher.ChakraCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/JavaScriptEngineSwitcher.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/React.AspNet.Middleware.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/React.AspNet.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/React.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/ru-ru/JavaScriptEngineSwitcher.ChakraCore.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/ru-ru/JavaScriptEngineSwitcher.Core.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/runtimes/osx-x64/native/libChakraCore.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/runtimes/win-x64/native/ChakraCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Static/About.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/dataSources/46c3c6d5-31eb-44ac-be9a-432e41206cf9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/dataSources/46c3c6d5-31eb-44ac-be9a-432e41206cf9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/dataSources/46c3c6d5-31eb-44ac-be9a-432e41206cf9/storage_v2/_src_/database/d4gnsnnlifl664.NVdC3w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/dataSources/46c3c6d5-31eb-44ac-be9a-432e41206cf9/storage_v2/_src_/database/d4gnsnnlifl664.NVdC3w/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_TimePartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Application/obj/Debug/net5.0/Postter.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Application/obj/Debug/net5.0/Postter.Application.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/bin/Debug/net5.0/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/bin/Debug/net5.0/Postter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/bin/Debug/net5.0/Postter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/bin/Debug/net5.0/Postter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/bin/Debug/net5.0/ref/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/bin/Debug/net5.0/ref/Postter.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Application/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/Postter.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/Postter.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/Postter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/Postter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/Postter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/ref/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/obj/Debug/net5.0/ref/Postter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/Context/UsersDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/Context/UsersDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Infrastructure.Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/ref/Postter.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/bin/Debug/net5.0/ref/Postter.Infrastructure.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Domain/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/ref/Postter.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/ref/Postter.Infrastructure.Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.IoC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.IoC/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Controllers/StaticController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Controllers/StaticController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Postter.Presentation.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Postter.Presentation.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Newtonsoft.Json.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Domain.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Domain.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.IoC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.IoC.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.IoC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Infrastructure.IoC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Views/Static/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Views/Static/About.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.deps.json" afterDir="false" />
@@ -85,18 +49,34 @@
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Static/About.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Static/About.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/ref/Postter.Presentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/ref/Postter.Presentation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Postter.Presentation.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Postter.Presentation.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Postter.Presentation.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Postter.Presentation.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/app.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,13 +106,21 @@
       <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/Index.html" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Pages/Static/About.cshtml" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Views/Index.html" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Static/About.cshtml" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Views/Account/Login.cshtml" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/StaticController.cs" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/app.jsx" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Startup.cs" />
       <option value="$PROJECT_DIR$/Postter.Domain/Models/User.cs" />
       <option value="$PROJECT_DIR$/Postter.Infrastructure.Data/Context/UsersDbContext.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Startup.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/StaticController.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/ReactFolder/package.json" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/ReactFolder/dist/bundle.js" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/ReactFolder/webpack.config.js" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/ReactFolder/app.js" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/appsettings.json" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/app.js" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/app.jsx" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_TimePartial.cshtml" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Static/About.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qNkzO3o1knEZk4ODw5ZV8dG4Xc" />
@@ -199,6 +187,8 @@
       <workItem from="1617103629580" duration="2462000" />
       <workItem from="1617121148539" duration="4792000" />
       <workItem from="1617189474488" duration="1709000" />
+      <workItem from="1617191425546" duration="1661000" />
+      <workItem from="1617220532854" duration="10153000" />
     </task>
     <servers />
   </component>

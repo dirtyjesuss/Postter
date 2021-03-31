@@ -1,0 +1,25 @@
+﻿@{
+    string s = "https://unpkg.com/@babel/standalone/babel.min.js";
+}
+<ul class="navbar-nav">
+    <div id="nav"></div>
+</ul>
+
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="@s"></script>
+<script type="text/babel">
+        function tick() {
+                    ReactDOM.render(
+                      <li class="nav-item">
+                        <div class="nav-link text-dark">{new Date().toLocaleTimeString()}</div>
+                      </li>,
+                      document.getElementById("nav")
+                    );
+                  }
+                  setInterval(tick, 1000);
+        ReactDOM.render(
+            <About/>,
+            document.getElementById("app")
+        )
+    </script>

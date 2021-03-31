@@ -127,6 +127,7 @@
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="_TimePartial.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
             <e p="Error.cshtml" t="Include" />
           </e>

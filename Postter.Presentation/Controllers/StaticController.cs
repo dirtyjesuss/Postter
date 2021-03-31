@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using Postter.Domain.Models;
 
 namespace Postter.Presentation.Controllers
 {
-    [Route("static/[controller]")]
     public class StaticController : Controller
     {
-        [HttpGet]
+
         public IActionResult About()
         {
             return View();

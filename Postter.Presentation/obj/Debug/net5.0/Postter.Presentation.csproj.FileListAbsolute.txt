@@ -125,3 +125,6 @@ C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\bin\Debug\net5.0\ru-
 C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\bin\Debug\net5.0\runtimes\osx-x64\native\libChakraCore.dylib
 C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\bin\Debug\net5.0\runtimes\win-x64\native\ChakraCore.dll
 C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Static\About.cshtml.g.cs
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\bin\Debug\net5.0\runtimes\win-x86\native\ChakraCore.dll
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\bin\Debug\net5.0\React.Router.dll
+C:\Users\mezin\Desktop\Postter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Shared\_TimePartial.cshtml.g.cs

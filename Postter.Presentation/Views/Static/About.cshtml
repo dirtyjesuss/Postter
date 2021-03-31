@@ -1,19 +1,39 @@
 ﻿@model dynamic
 
 @{
-    ViewData["Title"] = "About";
+    ViewBag.Title = "About";
+    Layout = "_Layout";
+    string s = "https://unpkg.com/@babel/standalone/babel.min.js";
 }
 
+<h2>React page!</h2>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"]</title>
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-    <div id="content"></div>
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.11.0/umd/react.development.js"></script>
-    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"></script>
-    <script src="js/app.jsx"></script>
+<div id="header"></div>
+<div id="app"></div>
+
+<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+<script src="@s"></script>
+<script src="js/app.jsx"></script>
+<script type="text/babel">
+        class About extends React.Component {
+            render() {
+                return <div id="items">
+                   <h2 class="text-center">О проекте</h2>
+                   <h3 class="text-center">разработка проекта</h3>
+                   <ul>
+                       <li class="list-group-item text-center"><a href="https://vk.com/dirtyjesuss">Русланчик</a> </li>
+                       <li class="list-group-item text-center"><a href="https://vk.com/nimadarips">Игоречек</a></li>
+                   </ul>
+               </div>;
+            }
+        }
+    </script>
 </body>
 </html>

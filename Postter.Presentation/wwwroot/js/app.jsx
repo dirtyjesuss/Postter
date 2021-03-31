@@ -1,11 +1,9 @@
-﻿class Static extends React.Component{
-    render(){
-        return <div>Привет, Иваш. 
-            <p><h4>привет</h4></p> 
-        </div>;
-        
+﻿class Hello extends React.Component {
+    render() {
+        return <h1>Привет, React.JS</h1>;
     }
 }
 ReactDOM.render(
-    document.getElementById("Content")
+    <Hello />,
+    document.getElementById("content")
 );
