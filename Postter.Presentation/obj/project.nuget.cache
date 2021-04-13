@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FFK+nD6Kv1bUMTPJ1WeAl+fl7pzu71ARzhsD6yhXeEmXpYCiRSSg8dNPrNPJEtX3qvR5ZJ1k1N2zNc0MTadKLg==",
+  "dgSpecHash": "/+x6AlVd2YxDGndF7kaCXe3C0mQhw588lvzFzBrm3bQT2uJZU2iFWOoSElXCg4IgoqLgJg4o0yQAHeXa+wezjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mezin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mezin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

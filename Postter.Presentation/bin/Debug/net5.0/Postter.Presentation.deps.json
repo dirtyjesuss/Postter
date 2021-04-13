@@ -1965,6 +1965,7 @@
       },
       "Postter.Domain/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "5.0.0",
           "Postter.Application": "1.0.0"
         },
         "runtime": {

@@ -2495,6 +2495,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "5.0.0",
           "Postter.Application": "1.0.0"
         },
         "compile": {
@@ -2502,7 +2503,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Infrastructure.Data/1.0.0": {
         "type": "project",
@@ -2517,7 +2521,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Infrastructure.Data.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Infrastructure.IoC/1.0.0": {
         "type": "project",
@@ -2531,7 +2538,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Infrastructure.IoC.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -8232,11 +8242,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\Postter\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
       "projectName": "Postter.Presentation",
-      "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
+      "projectPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
       "packagesPath": "C:\\Users\\mezin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter\\Postter.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mezin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8251,8 +8261,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mezin\\Desktop\\Postter\\Postter\\Postter.Infrastructure.IoC\\Postter.Infrastructure.IoC.csproj": {
-              "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter\\Postter.Infrastructure.IoC\\Postter.Infrastructure.IoC.csproj"
+            "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Infrastructure.IoC\\Postter.Infrastructure.IoC.csproj": {
+              "projectPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Infrastructure.IoC\\Postter.Infrastructure.IoC.csproj"
             }
           }
         }
