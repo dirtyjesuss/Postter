@@ -226,3 +226,4 @@ C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\P
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\ref\Postter.Presentation.dll
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Postter.Presentation.pdb
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Postter.Presentation.genruntimeconfig.cache
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs

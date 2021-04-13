@@ -19,12 +19,12 @@ namespace Postter.Presentation.Controllers
         {
             _logger = logger;
         }
-        [Authorize]
+        //[Authorize] //- вот это вот существо редиректало не на те страницы регистрации и авторизации не используйте её, это identity!!!
         public IActionResult Index()
         {
             if (User.Identity.IsAuthenticated) 
-                return Content(User.Identity.Name);
-            return Content("не аутентифицирован");
+                return View(User);
+            return Redirect("/Account/Login");
         }
 
         public IActionResult Privacy()
@@ -33,7 +33,7 @@ namespace Postter.Presentation.Controllers
         }
         public IActionResult About()
         {
-            return Content("Authorized");
+            return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

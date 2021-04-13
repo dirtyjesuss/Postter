@@ -11,7 +11,7 @@ using Postter.Infrastructure.Data.Context;
 
 namespace Postter.Presentation.Controllers
 {
-    public class AccountController : Controller
+     public class AccountController : Controller
     {
         private UserDbContext db;
         public AccountController(UserDbContext context)
