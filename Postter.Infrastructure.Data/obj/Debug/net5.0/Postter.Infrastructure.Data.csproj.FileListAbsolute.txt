@@ -38,3 +38,23 @@ C:\Users\mezin\Desktop\rePostter\Postter\Postter.Infrastructure.Data\obj\Debug\n
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\ref\Postter.Infrastructure.Data.dll
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.pdb
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.genruntimeconfig.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Infrastructure.Data.deps.json
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Infrastructure.Data.runtimeconfig.json
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Infrastructure.Data.runtimeconfig.dev.json
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Infrastructure.Data.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\ref\Postter.Infrastructure.Data.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Infrastructure.Data.pdb
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Application.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Domain.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Domain.pdb
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\bin\Debug\net5.0\Postter.Application.pdb
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.csproj.CopyComplete
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\ref\Postter.Infrastructure.Data.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.pdb
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Infrastructure.Data\obj\Debug\net5.0\Postter.Infrastructure.Data.genruntimeconfig.cache

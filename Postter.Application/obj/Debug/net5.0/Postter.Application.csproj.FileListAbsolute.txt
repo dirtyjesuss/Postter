@@ -22,3 +22,15 @@ C:\Users\mezin\Desktop\rePostter\Postter\Postter.Application\obj\Debug\net5.0\Po
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.dll
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Application\obj\Debug\net5.0\ref\Postter.Application.dll
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.pdb
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\bin\Debug\net5.0\Postter.Application.deps.json
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\bin\Debug\net5.0\Postter.Application.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\bin\Debug\net5.0\ref\Postter.Application.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\bin\Debug\net5.0\Postter.Application.pdb
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.csprojAssemblyReference.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.AssemblyInfoInputs.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.AssemblyInfo.cs
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.csproj.CoreCompileInputs.cache
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\ref\Postter.Application.dll
+C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Application\obj\Debug\net5.0\Postter.Application.pdb

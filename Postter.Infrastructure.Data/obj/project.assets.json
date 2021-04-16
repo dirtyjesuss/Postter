@@ -396,10 +396,7 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Domain.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -1179,11 +1176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Infrastructure.Data\\Postter.Infrastructure.Data.csproj",
+      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Infrastructure.Data\\Postter.Infrastructure.Data.csproj",
       "projectName": "Postter.Infrastructure.Data",
-      "projectPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Infrastructure.Data\\Postter.Infrastructure.Data.csproj",
+      "projectPath": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Infrastructure.Data\\Postter.Infrastructure.Data.csproj",
       "packagesPath": "C:\\Users\\mezin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Infrastructure.Data\\obj\\",
+      "outputPath": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Infrastructure.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mezin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1198,8 +1195,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Domain\\Postter.Domain.csproj": {
-              "projectPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Domain\\Postter.Domain.csproj"
+            "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Domain\\Postter.Domain.csproj": {
+              "projectPath": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Domain\\Postter.Domain.csproj"
             }
           }
         }
@@ -1246,9 +1243,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

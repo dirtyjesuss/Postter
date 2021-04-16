@@ -19,14 +19,14 @@ namespace Postter.Presentation.Controllers
         {
             _logger = logger;
         }
-        //[Authorize] //- вот это вот существо редиректало не на те страницы регистрации и авторизации не используйте её, это identity!!!
+       // [Authorize(Roles = "User, Admin")] //- вот это вот существо редиректало не на те страницы регистрации и авторизации не используйте её, это identity!!
         public IActionResult Index()
         {
-            if (User.Identity.IsAuthenticated) 
+            if(User.IsInRole("user")) 
                 return View(User);
-            return Redirect("/Account/Login");
+            return Redirect("/Account/Register");
         }
-
+        //[Authorize(Roles = "Admin")]
         public IActionResult Privacy()
         {
             return View();

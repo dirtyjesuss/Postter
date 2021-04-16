@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Postter.Domain.Models;
 
 namespace Postter.Presentation.Data
 {
@@ -12,5 +13,7 @@ namespace Postter.Presentation.Data
             : base(options)
         {
         }
+        public DbSet<User> Users { get; set; }
+
     }
 }
