@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Postter.Presentation.Models;
@@ -14,15 +15,16 @@ namespace Postter.Presentation.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly SignInManager<User> _signInManager;
+        public HomeController(ILogger<HomeController> logger, SignInManager<User> signInManager)
         {
             _logger = logger;
+            _signInManager = signInManager;
         }
        // [Authorize(Roles = "User, Admin")] //- вот это вот существо редиректало не на те страницы регистрации и авторизации не используйте её, это identity!!
         public IActionResult Index()
         {
-            if(User.IsInRole("user")) 
+            if(_signInManager.IsSignedIn(User)) 
                 return View(User);
             return Redirect("/Account/Register");
         }

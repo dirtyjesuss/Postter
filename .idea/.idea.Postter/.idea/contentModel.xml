@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\mezin\AppData\local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\mezin\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_Postter.1202362677.00" t="ExcludeRecursive" />
+    <e p="C:\Users\mezin\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_Postter.889629060.00" t="ExcludeRecursive" />
     <e p="C:\Users\mezin\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\mezin\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\mezin\Desktop\Fuck you❕\Postter" t="IncludeFlat">
+    <e p="C:\Users\mezin\Desktop\rePostter\Postter" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Postter.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -20,8 +20,8 @@
         <e p="Postter.Application.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include" />
         <e p="ViewModels" t="Include">
-          <e p="LoginModel.cs" t="Include" />
-          <e p="RegisterModel.cs" t="Include" />
+          <e p="LoginViewModel.cs" t="Include" />
+          <e p="RegisterViewModel.cs" t="Include" />
         </e>
       </e>
       <e p="Postter.Domain" t="IncludeRecursive">

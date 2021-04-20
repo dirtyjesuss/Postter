@@ -351,3 +351,12 @@ C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Presentation\bin\Debug\net5.0
 C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
 C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Presentation\bin\Debug\net5.0\Owin.dll
 C:\Users\mezin\Desktop\Fuck you❕\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.Cookies.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.Google.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Owin.dll

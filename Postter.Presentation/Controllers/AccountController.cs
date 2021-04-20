@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Postter.Infrastructure.Data.Context;
+using Postter.Presentation.Data;
 
 namespace Postter.Presentation.Controllers
 {
@@ -17,11 +18,13 @@ namespace Postter.Presentation.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
+        private ApplicationDbContext _db;
  
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, ApplicationDbContext db)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _db = db;
         }
         [HttpGet]
         public IActionResult Register()
@@ -34,13 +37,25 @@ namespace Postter.Presentation.Controllers
             if(ModelState.IsValid)
             {
                 User user = new User { Email = model.Email, UserName = model.Nickname };
-                // добавляем пользователя
+                //проверка пользователя на уникальность никнейма
+                var res = _db.Users.FirstOrDefaultAsync(user => user.UserName == model.Nickname);
+                if (res != null)
+                {
+                    ViewData["Error"] = "Пользователь с таким именем уже существует";
+                    return RedirectToAction("Register", "Account");
+                }
+                else
+                {
+                    ViewData["Error"] = "";
+                }
+                    // добавляем пользователя
                 var result = await _userManager.CreateAsync(user, model.Password);
+                result = await _userManager.SetEmailAsync(user, model.Email);
                 if (result.Succeeded)
                 {
                     // установка куки
                     await _signInManager.SignInAsync(user, false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Login", "Account");
                 }
                 else
                 {
@@ -51,6 +66,50 @@ namespace Postter.Presentation.Controllers
                 }
             }
             return View(model);
+        }
+        [HttpGet]
+        public IActionResult Login(string returnUrl = null)
+        {
+            return View(new LoginViewModel { ReturnUrl = returnUrl });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result =
+                await _signInManager.PasswordSignInAsync(model.NickName, model.Password, model.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    // проверяем, принадлежит ли URL приложению
+                    if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                    {
+                        return Redirect(model.ReturnUrl);
+                    }
+                    else
+                    {
+                        
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Неправильный логин и (или) пароль");
+                }
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            // удаляем аутентификационные куки
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

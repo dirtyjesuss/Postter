@@ -544,11 +544,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Domain\\Postter.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Domain\\Postter.Domain.csproj",
       "projectName": "Postter.Domain",
-      "projectPath": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Domain\\Postter.Domain.csproj",
+      "projectPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Domain\\Postter.Domain.csproj",
       "packagesPath": "C:\\Users\\mezin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Domain\\obj\\",
+      "outputPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mezin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -563,8 +563,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Application\\Postter.Application.csproj": {
-              "projectPath": "C:\\Users\\mezin\\Desktop\\Fuck you❕\\Postter\\Postter.Application\\Postter.Application.csproj"
+            "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Application\\Postter.Application.csproj": {
+              "projectPath": "C:\\Users\\mezin\\Desktop\\rePostter\\Postter\\Postter.Application\\Postter.Application.csproj"
             }
           }
         }
@@ -595,6 +595,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
