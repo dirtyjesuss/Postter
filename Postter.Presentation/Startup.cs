@@ -25,7 +25,7 @@ using Microsoft.Owin;
 using Owin;
 using Postter.Domain.Models;
 using Postter.Infrastructure.Data.Context;
-using CookieAuthenticationOptions = Microsoft.Owin.Security.Cookies.CookieAuthenticationOptions;
+using CookieAuthenticationDefaults = Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults;
 
 namespace Postter.Presentation
 {
@@ -49,14 +49,11 @@ namespace Postter.Presentation
                 .AddEntityFrameworkStores<ApplicationDbContext>();
          
             
-            services.AddAuthentication()
+             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
-                    IConfigurationSection googleAuthNSection =
-                        Configuration.GetSection("Authentication:Google");
-
-                    options.ClientId = "588882707716-3nkcr2qjhkcfq765gf87kot2it2qldiu.apps.googleusercontent.com";
-                    options.ClientSecret = "VxWej_8kpNvsSLxx9HUrm8w -";
+                    options.ClientId = "531387122859-h7mq9i5p9db60lstcc3b2not9apggbos.apps.googleusercontent.com";
+                    options.ClientSecret = "sYFklPk_WHws4Cjv_oBwWIst";
                 });
         }
 
@@ -76,7 +73,6 @@ namespace Postter.Presentation
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

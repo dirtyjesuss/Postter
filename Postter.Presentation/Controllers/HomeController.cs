@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +13,7 @@ using Postter.Application.ViewModels;
 using Postter.Domain.Models;
 namespace Postter.Presentation.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -22,7 +24,8 @@ namespace Postter.Presentation.Controllers
             _signInManager = signInManager;
         }
        // [Authorize(Roles = "User, Admin")] //- вот это вот существо редиректало не на те страницы регистрации и авторизации не используйте её, это identity!!
-        public IActionResult Index()
+       
+       public IActionResult Index()
         {
             if(_signInManager.IsSignedIn(User)) 
                 return View(User);
@@ -42,5 +45,6 @@ namespace Postter.Presentation.Controllers
         {
             return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
         }
+
     }
 }

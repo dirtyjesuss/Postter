@@ -1,4 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Net;
+using System.Net.Security;
+using Microsoft.AspNetCore.Authentication;
+
 namespace Postter.Application.ViewModels
 {
     public class LoginViewModel
@@ -12,5 +17,6 @@ namespace Postter.Application.ViewModels
         public bool RememberMe { get; set; }
          
         public string ReturnUrl { get; set; }
+        public IList<AuthenticationScheme> ExternalLogins { get; set; }
     }
 }
