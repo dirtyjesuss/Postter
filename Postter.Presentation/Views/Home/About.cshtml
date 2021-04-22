@@ -1,18 +1,61 @@
 ﻿@model dynamic
 
 @{
-    Layout = null;
+    ViewData["Title"] = "About";
 }
+<style>
+    #googlemap{
+        height: 400px;
+        width: 100%;
+    }
+</style>
+<h1>@ViewData["Title"]</h1>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
+<p>О нас</p>
 <div>
-      
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Руслан Ханов</h5>
+                        <a href="#" class="btn btn-primary">Связь</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Игорь Мезин</h5>
+                        <a href="#" class="btn btn-primary">Связь</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="align-content-center">
+                <h3 class="text-center">Наше местоположение</h3>
+                <div id="googlemap"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function initMap(){
+        var opt = {
+            center: {lat:55.79216248290239 , lng:49.12643888500925} , 
+            zoom: 14,
+        };
+        
+        var map = new google.maps.Map(document.getElementById("googlemap"), opt);
+    }
+</script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZhdVKnfRec26rAXqKCgGT0hhDiLsEsuY&callback=initMap&libraries=&v=weekly"
+    async
+></script>

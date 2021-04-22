@@ -23,8 +23,7 @@ namespace Postter.Presentation.Controllers
             _logger = logger;
             _signInManager = signInManager;
         }
-       // [Authorize(Roles = "User, Admin")] //- вот это вот существо редиректало не на те страницы регистрации и авторизации не используйте её, это identity!!
-       
+       // [Authorize(Roles = "User, Admin")]
        public IActionResult Index()
         {
             if(_signInManager.IsSignedIn(User)) 
@@ -36,6 +35,7 @@ namespace Postter.Presentation.Controllers
         {
             return View();
         }
+        [AllowAnonymous]
         public IActionResult About()
         {
             return View();

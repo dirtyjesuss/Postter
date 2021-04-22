@@ -73,7 +73,6 @@ namespace Postter.Presentation.Controllers
                     }
                 }
             }
-
             return View(model);
         }
 

@@ -3,7 +3,7 @@ namespace Postter.Application.ViewModels
 {
     public class RegisterViewModel
     {
-        [Required(ErrorMessage ="Не указан Email")]
+        [Required(ErrorMessage ="Не указан email")]
         public string Email { get; set; }
          
         [Required(ErrorMessage = "Не указан пароль")]
