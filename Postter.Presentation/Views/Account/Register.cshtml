@@ -16,7 +16,7 @@
         </div>
         <div>
             <label asp-for="Password">Введите пароль</label><br />
-            <input id="userPassword" class="from" asp-for="Password" required pattern="[a-zA-Z0-9]+"/>
+            <input id="userPassword" class="from" asp-for="Password" required pattern="[a-zA-Z0-9].+"/>
             <div class="error"></div>
             <span asp-validation-for="Password" ></span>
         </div>

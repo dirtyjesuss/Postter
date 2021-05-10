@@ -46,7 +46,7 @@ namespace Postter.Presentation.Controllers
                 User user = new User {Email = model.Email, UserName = model.Nickname};
                 //проверка пользователя на уникальность никнейма
                 var res = _db.Users.FirstOrDefaultAsync(user => user.UserName == model.Nickname);
-                if (res != null)
+                if (res.IsCompletedSuccessfully)
                 {
                     ViewData["Error"] = "Пользователь с таким именем уже существует";
                     return RedirectToAction("Register", "Account");
@@ -57,11 +57,12 @@ namespace Postter.Presentation.Controllers
                 }
 
                 // добавляем пользователя
+                
                 var result = await _userManager.CreateAsync(user, model.Password);
-                result = await _userManager.SetEmailAsync(user, model.Email);
+                await _userManager.SetEmailAsync(user, model.Email);
                 if (result.Succeeded)
                 {
-                    // установка куки
+                    // установка куки 
                     await _signInManager.SignInAsync(user, false);
                     return RedirectToAction("Login", "Account");
                 }
@@ -107,7 +108,7 @@ namespace Postter.Presentation.Controllers
                     }
                     else
                     {
-
+                        
                         return RedirectToAction("Index", "Home");
                     }
                 }
@@ -132,83 +133,83 @@ namespace Postter.Presentation.Controllers
         }
 
 
-     [AllowAnonymous]
-public async Task<IActionResult>
+        [AllowAnonymous]
+        public async Task<IActionResult>
             ExternalLoginCallback(string returnUrl = null, string remoteError = null)
-{
-    returnUrl = returnUrl ?? Url.Content("~/");
-
-    LoginViewModel loginViewModel = new LoginViewModel
-    {
-        ReturnUrl = returnUrl,
-        ExternalLogins =
-                (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList()
-    };
-
-    if (remoteError != null)
-    {
-        ModelState
-            .AddModelError(string.Empty, $"Error from external provider: {remoteError}");
-
-        return View("Login", loginViewModel);
-    }
-
-    // Get the login information about the user from the external login provider
-    var info = await _signInManager.GetExternalLoginInfoAsync();
-    if (info == null)
-    {
-        ModelState
-            .AddModelError(string.Empty, "Error loading external login information.");
-
-        return View("Login", loginViewModel);
-    }
-
-    // If the user already has a login (i.e if there is a record in AspNetUserLogins
-    // table) then sign-in the user with this external login provider
-    var signInResult = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider,
-        info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
-
-    if (signInResult.Succeeded)
-    {
-        return LocalRedirect(returnUrl);
-    }
-    // If there is no record in AspNetUserLogins table, the user may not have
-    // a local account
-    else
-    {
-        // Get the email claim value
-        var email = info.Principal.FindFirstValue(ClaimTypes.Email);
-
-        if (email != null)
         {
-            // Create a new user without password if we do not have a user already
-            var user = await _userManager.FindByEmailAsync(email);
+            returnUrl = returnUrl ?? Url.Content("~/");
 
-            if (user == null)
+            LoginViewModel loginViewModel = new LoginViewModel
             {
-                user = new User
-                {
-                    UserName = info.Principal.FindFirstValue(ClaimTypes.Email),
-                    Email = info.Principal.FindFirstValue(ClaimTypes.Email)
-                };
+                ReturnUrl = returnUrl,
+                ExternalLogins =
+                    (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList()
+            };
 
-                await _userManager.CreateAsync(user);
+            if (remoteError != null)
+            {
+                ModelState
+                    .AddModelError(string.Empty, $"Error from external provider: {remoteError}");
+
+                return View("Login", loginViewModel);
             }
 
-            // Add a login (i.e insert a row for the user in AspNetUserLogins table)
-            await _userManager.AddLoginAsync(user, info);
-            await _signInManager.SignInAsync(user, isPersistent: false);
+            // Get the login information about the user from the external login provider
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info == null)
+            {
+                ModelState
+                    .AddModelError(string.Empty, "Error loading external login information.");
 
-            return LocalRedirect(returnUrl);
+                return View("Login", loginViewModel);
+            }
+
+            // If the user already has a login (i.e if there is a record in AspNetUserLogins
+            // table) then sign-in the user with this external login provider
+            var signInResult = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider,
+                info.ProviderKey, isPersistent: false, bypassTwoFactor: true);
+
+            if (signInResult.Succeeded)
+            {
+                return LocalRedirect(returnUrl);
+            }
+            // If there is no record in AspNetUserLogins table, the user may not have
+            // a local account
+            else
+            {
+                // Get the email claim value
+                var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+
+                if (email != null)
+                {
+                    // Create a new user without password if we do not have a user already
+                    var user = await _userManager.FindByEmailAsync(email);
+
+                    if (user == null)
+                    {
+                        user = new User
+                        {
+                            UserName = info.Principal.FindFirstValue(ClaimTypes.Email),
+                            Email = info.Principal.FindFirstValue(ClaimTypes.Email)
+                        };
+
+                        await _userManager.CreateAsync(user);
+                    }
+
+                    // Add a login (i.e insert a row for the user in AspNetUserLogins table)
+                    await _userManager.AddLoginAsync(user, info);
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+
+                    return LocalRedirect(returnUrl);
+                }
+
+                // If we cannot find the user email we cannot continue
+                ViewBag.ErrorTitle = $"Email claim not received from: {info.LoginProvider}";
+                ViewBag.ErrorMessage = "Please contact support on Pragim@PragimTech.com";
+
+                return View("Error");
+            }
         }
-
-        // If we cannot find the user email we cannot continue
-        ViewBag.ErrorTitle = $"Email claim not received from: {info.LoginProvider}";
-        ViewBag.ErrorMessage = "Please contact support on Pragim@PragimTech.com";
-
-        return View("Error");
-    }
-}
 
         [HttpPost]
         [ValidateAntiForgeryToken]

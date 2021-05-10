@@ -360,3 +360,8 @@ C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\M
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.Google.dll
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Microsoft.Owin.Security.OAuth.dll
 C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\bin\Debug\net5.0\Owin.dll
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Roles\Create.cshtml.g.cs
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Roles\Edit.cshtml.g.cs
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Roles\Index.cshtml.g.cs
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\Roles\UserList.cshtml.g.cs
+C:\Users\mezin\Desktop\rePostter\Postter\Postter.Presentation\obj\Debug\net5.0\Razor\Views\User\Profile.cshtml.g.cs

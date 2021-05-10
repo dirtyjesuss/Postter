@@ -20,6 +20,7 @@
         <e p="Postter.Application.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include" />
         <e p="ViewModels" t="Include">
+          <e p="ChangeRoleViewModel.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
           <e p="RegisterViewModel.cs" t="Include" />
         </e>
@@ -86,15 +87,17 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="RolesController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
         </e>
         <e p="Data" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
-          <e p="20210416202755_init.cs" t="Include" />
-          <e p="20210416202755_init.Designer.cs" t="Include" />
-          <e p="20210416203920_Initial.cs" t="Include" />
-          <e p="20210416203920_Initial.Designer.cs" t="Include" />
+          <e p="20210428220101_init.cs" t="Include" />
+          <e p="20210428220101_init.Designer.cs" t="Include" />
+          <e p="20210510171837_inits.cs" t="Include" />
+          <e p="20210510171837_inits.Designer.cs" t="Include" />
           <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -126,11 +129,20 @@
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
           </e>
+          <e p="Roles" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="UserList.cshtml" t="Include" />
+          </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LoginPartial.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
             <e p="Error.cshtml" t="Include" />
+          </e>
+          <e p="User" t="Include">
+            <e p="Profile.cshtml" t="Include" />
           </e>
         </e>
         <e p="wwwroot" t="Include">
@@ -194,6 +206,7 @@
               <e p="LICENSE.txt" t="Include" />
             </e>
           </e>
+          <e p="Profile.html" t="Include" />
         </e>
       </e>
       <e p="Postter.sln" t="IncludeFlat" />

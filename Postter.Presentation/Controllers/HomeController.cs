@@ -13,7 +13,7 @@ using Postter.Application.ViewModels;
 using Postter.Domain.Models;
 namespace Postter.Presentation.Controllers
 {
-    [Authorize]
+    [Authorize(Roles="user")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -23,8 +23,7 @@ namespace Postter.Presentation.Controllers
             _logger = logger;
             _signInManager = signInManager;
         }
-       // [Authorize(Roles = "User, Admin")]
-       public IActionResult Index()
+        public IActionResult Index()
         {
             if(_signInManager.IsSignedIn(User)) 
                 return View(User);

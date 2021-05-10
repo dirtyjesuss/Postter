@@ -10,8 +10,8 @@ using Postter.Presentation.Data;
 namespace Postter.Presentation.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210416203920_Initial")]
-    partial class Initial
+    [Migration("20210428220101_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -231,14 +231,8 @@ namespace Postter.Presentation.Migrations
                     b.Property<string>("Image_path")
                         .HasColumnType("text");
 
-                    b.Property<string>("Name")
-                        .HasColumnType("text");
-
                     b.Property<string>("Password")
                         .HasColumnType("text");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("integer");
 
                     b.HasDiscriminator().HasValue("User");
                 });
