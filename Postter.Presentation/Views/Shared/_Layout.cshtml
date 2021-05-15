@@ -1,14 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>@ViewData["Title"] - Postter.Presentation</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8babd71c95.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    <script src="~/js/script.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Postter</title>
 </head>
 <body>
-<header>
+@*<header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Postter.Presentation</a>
@@ -17,7 +31,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                <partial name="_LoginPartial"/>
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -25,25 +38,95 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                     </li>
-                    @*<li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Profile">Privacy</a>
-                    </li>*@
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-</header>
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+</header>*@
+<div class="sidenav sidenav-left">
+    <div class="logo">
+        <i class="fas fa-cat text-white"></i>
+    </div>
+
+    <div class="nav-links">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="active">
+            <i class="fas fa-home" style="width: 23px; height: 23px; margin-right: 3px"></i>
+            <span>Home</span>
+        </a>
+        <a href="#">
+            <i class="far fa-bell" style="width: 23px; height: 23px; margin-right: 3px; margin-left: 1px"></i>
+            <span>Notifications</span>
+        </a>
+        <a href="#">
+            <i class="far fa-user-circle" style="width: 23px; height: 23px; margin-right: 3px; margin-left: 2px"></i>
+            <span>Profile</span>
+        </a>
+    </div>
+
+    <partial name="_LoginPartial"/>
 </div>
 
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2021 - Postter.Presentation - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+<div class="postter-navbar">
+    <p class="bold-text">@ViewData["Title"]</p>
+</div>
+
+<div class="main">
+    @RenderBody()
+</div>
+
+<div class="sidenav sidenav-right">
+    <div class="wrapper">
+        <div class="rounded-box" id="postterSearchBar">
+            <i class="fas fa-search" style="color: var(--darkGray); padding: 10px 0 10px 20px;"></i>
+            <input class="postter-form" type="search" id="postterSearch" placeholder="Search in Postter">
+        </div>
+        <div class="rounded-box">
+            <p class="bold-text">Following</p>
+            <hr style="border-color: var(--darkGray); padding: 0 10px; margin: 0">
+
+            <div class="row m-0 p-3">
+                <div class="col-2 p-0">
+                    <img class="avatar-img-sm"
+                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                </div>
+                <div class="col-6 p-0 ml-3 pl-2">
+                    <p class="semi-bold-text m-0 p-0">BRUH</p>
+                    <p class="secondary-text m-0 p-0">@@bruh_666</p>
+                </div>
+            </div>
+            <hr style="border-color: var(--darkGray); padding: 0 10px; margin: 0">
+
+            <div class="row m-0 p-3">
+                <div class="col-2 p-0">
+                    <img class="avatar-img-sm"
+                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                </div>
+                <div class="col-6 p-0 ml-3 pl-2">
+                    <p class="semi-bold-text m-0 p-0">BRUH</p>
+                    <p class="secondary-text m-0 p-0">@@bruh_666</p>
+                </div>
+            </div>
+            <hr style="border-color: var(--darkGray); padding: 0 10px; margin: 0">
+
+            <div class="row m-0 p-3">
+                <div class="col-2 p-0">
+                    <img class="avatar-img-sm"
+                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                </div>
+                <div class="col-6 p-0 ml-3 pl-2">
+                    <p class="semi-bold-text m-0 p-0">BRUH</p>
+                    <p class="secondary-text m-0 p-0">@@bruh_666</p>
+                </div>
+            </div>
+        </div>
+        <hr style="border-color: var(--darkGray);">
+        <p class="secondary-text">© Postter, Inc., 2021.</p>
     </div>
-</footer>
+</div>
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 @RenderSection("Scripts", required: false)

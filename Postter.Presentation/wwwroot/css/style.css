@@ -43,7 +43,7 @@ body {
 }
 
 .semi-bold-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: white;
 }
@@ -281,6 +281,25 @@ body {
 .nav .nav-link:hover {
     background-color: #1a080b;
     color: var(--pinkColor);
+}
+
+.postter-dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.postter-dropup:hover .dropup-content {
+    display: block;
 }
 
 #posts .tab {

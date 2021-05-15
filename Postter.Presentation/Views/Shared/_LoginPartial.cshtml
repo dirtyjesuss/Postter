@@ -3,19 +3,41 @@
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
 
-<ul class="navbar-nav">
-    @if (SignInManager.IsSignedIn(User))
-    {
-        <li class="nav-item">
+@if (SignInManager.IsSignedIn(User))
+{
+        @*<li class="nav-item">
             <a class="nav-link text-dark" title="Manage">Hello @User.Identity.Name!</a>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
                 <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
             </form>
-        </li>
-    }
-    else
+        </li>*@
+    <a class="profile-preview">
+        <div class="row m-0">
+            <div class="col-2 p-0">
+                <img class="avatar-img-sm" src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg" alt="404">
+            </div>
+            <div class="col-5 p-0 ml-3 pl-4x">
+                <p class="semi-bold-text m-0 p-0">
+                    @if (User.Identity != null)
+                    {
+                        @User.Identity.Name
+                    }
+                </p>
+                <p class="secondary-text m-0 p-0">user</p>
+            </div>
+            <div class="col-4 p-0 pt-1">
+                <form class="form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
+                    <button type="submit" class="postter-icon-button pt-2" style="color: var(--lightGray); font-size: 15px">
+                        Log out
+                    </button>
+                </form>
+            </div>
+        </div>
+    </a>
+}
+@*else
     {
         <li class="nav-item">
             <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Register</a>
@@ -23,5 +45,4 @@
         <li class="nav-item">
             <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
         </li>
-    }
-</ul>
+    }*@

@@ -1,13 +1,147 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Main page";
 }
  
  
 @if(User.Identity.IsAuthenticated)
 {
-    <p>@User.Identity.Name</p>
- 
-    <form method="post" asp-controller="Account" asp-action="Logout">
-        <input type="submit" value="Выход" />
-    </form>
+    <!--Form-->
+    <div class="postter-box">
+        <div class="row m-0">
+            <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
+                <img class="avatar-img-sm"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+            </div>
+            <div class="col-10 px-0 py-4">
+                <form class="pr-5">
+                    <span class="textarea" role="textbox" contenteditable></span>
+                </form>
+            </div>
+        </div>
+        <div class="row m-0 ml-5 pl-3 py-3">
+            <div class="col-8">
+                <button class="postter-icon-button p-1" href="#">
+                    <i class="far fa-image"></i>
+                </button>
+                <button class="postter-icon-button p-1" href="#">
+                    <i class="fas fa-cat"></i>
+                </button>
+                <button class="postter-icon-button p-1" href="#">
+                    <i class="fas fa-cat"></i>
+                </button>
+                <button class="postter-icon-button p-1" href="#">
+                    <i class="fas fa-cat"></i>
+                </button>
+            </div>
+            <div class="col-4">
+                <button class="postter-button">Post</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 13px"></div>
+    <!--Content-->
+
+    <div class="postter-box postter-box-post">
+        <div class="row m-0">
+            <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
+                <img class="avatar-img-sm"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+            </div>
+            <div class="col-10 pl-0 pr-5 py-4">
+                <span class="semi-bold-text">BRUH</span><span class="secondary-text pl-2">@@bruh_666</span>
+                <p style="color: white">BRUH BRUH BRUH BRUH bruh bruh bruh bruh bruh bruh bruh bruh</p>
+                <img class="content-image"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                <div class="row m-0 pt-4 d-flex justify-content-center">
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="fas fa-retweet"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" data-toggle="modal" data-target="#replyModal" style="color: var(--darkGray); font-size: 23px">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="postter-box postter-box-post">
+        <div class="row m-0">
+            <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
+                <img class="avatar-img-sm"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+            </div>
+            <div class="col-10 pl-0 pr-5 py-4">
+                <span class="semi-bold-text">BRUH</span><span class="secondary-text pl-2">@@bruh_666</span>
+                <p style="color: white">BRUH BRUH BRUH BRUH bruh bruh bruh bruh bruh bruh bruh bruh</p>
+                <div class="row m-0 pt-4 d-flex justify-content-center">
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="fas fa-retweet"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="postter-box postter-box-post">
+        <div class="row m-0">
+            <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
+                <img class="avatar-img-sm"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+            </div>
+            <div class="col-10 pl-0 pr-5 py-4">
+                <span class="semi-bold-text">BRUH</span><span class="secondary-text pl-2">@@bruh_666</span>
+                <p style="color: white">BRUH BRUH BRUH BRUH bruh bruh bruh bruh bruh bruh bruh bruh</p>
+                <img class="content-image"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                <div class="row m-0 pt-4 d-flex justify-content-center">
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="fas fa-retweet"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                    <div class="col-4 p-0">
+                        <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
+                            <i class="far fa-comment"></i>
+                        </button>
+                        <span class="secondary-text">11.2k</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 }

@@ -56,16 +56,13 @@ namespace Postter.Presentation
                     options.ClientSecret = "sYFklPk_WHws4Cjv_oBwWIst";
                 });
         }
-
-
-
+        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
-
             }
             else
             {
@@ -85,7 +82,6 @@ namespace Postter.Presentation
 
             app.UseEndpoints(endpoints =>
             {
-
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

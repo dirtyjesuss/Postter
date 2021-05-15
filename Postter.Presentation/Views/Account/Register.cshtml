@@ -12,12 +12,12 @@
     <form method="post" class="validation" asp-action="Register" asp-controller="Account" asp-antiforgery="true">
         <div class="validation" asp-validation-summary="ModelOnly"></div>
         <div class="form-group row px-3 py-2">
-            <input asp-for="Email" type="email" class="postter-form postter-form-control w-100 bordered p-3" id="emailForm"
+            <input asp-for="Email" required type="email" class="postter-form postter-form-control w-100 bordered p-3" id="emailForm"
                    placeholder="Email" style="font-size: 16px"/>
             <span asp-validation-for="Email"></span>
         </div>
         <div class="form-group row px-3 py-2">
-            <input asp-for="Nickname" type="text" class="postter-form postter-form-control w-100 bordered p-3" id="usernameForm"
+            <input asp-for="Nickname" required type="text" class="postter-form postter-form-control w-100 bordered p-3" id="usernameForm"
                    placeholder="Username" style="font-size: 16px"/>
             <span asp-validation-for="Nickname"></span>
         </div>
@@ -28,7 +28,7 @@
             <span asp-validation-for="Password"></span>
         </div>
         <div class="form-group row px-3 py-2">
-            <input asp-for="ConfirmPassword" type="password" class="postter-form postter-form-control w-100 bordered p-3 rounded"
+            <input asp-for="ConfirmPassword" required type="password" class="postter-form postter-form-control w-100 bordered p-3 rounded"
                    id="confirmPasswordForm" placeholder="Confirm password" style="font-size: 16px"/>
             <span asp-validation-for="ConfirmPassword"></span>
         </div>
