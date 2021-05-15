@@ -13,7 +13,7 @@ using Postter.Application.ViewModels;
 using Postter.Domain.Models;
 namespace Postter.Presentation.Controllers
 {
-    [Authorize(Roles="user")]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
