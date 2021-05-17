@@ -59,11 +59,9 @@ C:/Users/mezin/Desktop/Fuck you❕/Postter/Postter.Infrastructure.IoC/obj/Debug/
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.IoC.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/ref/Postter.Infrastructure.IoC.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.IoC.pdb
-/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Application.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Domain.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.Data.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb
-/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Application.pdb
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Domain.pdb
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.csprojAssemblyReference.cache
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.GeneratedMSBuildEditorConfig.editorconfig
@@ -74,3 +72,5 @@ C:/Users/mezin/Desktop/Fuck you❕/Postter/Postter.Infrastructure.IoC/obj/Debug/
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/obj/Debug/net5.0/ref/Postter.Infrastructure.IoC.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/obj/Debug/net5.0/Postter.Infrastructure.IoC.pdb
+/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Application.dll
+/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/bin/Debug/net5.0/Postter.Application.pdb

@@ -1,4 +1,5 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@model IndexViewModel
+@using Microsoft.AspNetCore.Identity
 @using Postter.Domain.Models
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
@@ -16,13 +17,13 @@
     <a class="profile-preview">
         <div class="row m-0">
             <div class="col-2 p-0">
-                <img class="avatar-img-sm" src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg" alt="404">
+                <img class="avatar-img-sm" src="@Model.CurrentUser?.Image_path" alt="404">
             </div>
             <div class="col-5 p-0 ml-3 pl-4x">
                 <p class="semi-bold-text m-0 p-0">
-                    @if (User.Identity != null)
+                    @if (Model.CurrentUser != null)
                     {
-                        @User.Identity.Name
+                        @Model.CurrentUser.UserName
                     }
                 </p>
                 <p class="secondary-text m-0 p-0">user</p>

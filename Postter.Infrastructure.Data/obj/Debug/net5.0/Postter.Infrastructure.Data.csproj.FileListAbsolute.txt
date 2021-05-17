@@ -64,10 +64,8 @@ C:/Users/mezin/Desktop/Fuck you❕/Postter/Postter.Infrastructure.Data/obj/Debug
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Infrastructure.Data.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/ref/Postter.Infrastructure.Data.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Infrastructure.Data.pdb
-/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Application.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Domain.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Domain.pdb
-/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/bin/Debug/net5.0/Postter.Application.pdb
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.csprojAssemblyReference.cache
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.AssemblyInfoInputs.cache

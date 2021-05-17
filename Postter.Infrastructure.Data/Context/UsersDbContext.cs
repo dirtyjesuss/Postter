@@ -23,6 +23,6 @@ namespace Postter.Infrastructure.Data.Context
         public static UserDbContext Create()
         {
             return new UserDbContext();
-        } 
+        }
     }
 }

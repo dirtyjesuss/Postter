@@ -5,7 +5,9 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Postter.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Interfaces" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IPostService.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
@@ -14,17 +16,23 @@
           </e>
         </e>
         <e p="Postter.Application.csproj" t="IncludeRecursive" />
-        <e p="Services" t="Include" />
+        <e p="Services" t="Include">
+          <e p="PostService.cs" t="Include" />
+        </e>
         <e p="ViewModels" t="Include">
           <e p="ChangeRoleViewModel.cs" t="Include" />
           <e p="LoginViewModel.cs" t="Include" />
+          <e p="PostViewModel.cs" t="Include" />
           <e p="RegisterViewModel.cs" t="Include" />
         </e>
       </e>
       <e p="Postter.Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Interfaces" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="IPostRepository.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
+          <e p="Post.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -39,11 +47,21 @@
       <e p="Postter.Infrastructure.Data" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Context" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
           <e p="UsersDbContext.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20210413084639_init.cs" t="Include" />
           <e p="20210413084639_init.Designer.cs" t="Include" />
+          <e p="ApplicationDb" t="Include">
+            <e p="20210516142231_Init.cs" t="Include" />
+            <e p="20210516142231_Init.Designer.cs" t="Include" />
+            <e p="20210516144132_PostModelUpdate.cs" t="Include" />
+            <e p="20210516144132_PostModelUpdate.Designer.cs" t="Include" />
+            <e p="20210516144915_PostModelUpdate1.cs" t="Include" />
+            <e p="20210516144915_PostModelUpdate1.Designer.cs" t="Include" />
+            <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
+          </e>
           <e p="UserDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -54,7 +72,10 @@
           </e>
         </e>
         <e p="Postter.Infrastructure.Data.csproj" t="IncludeRecursive" />
-        <e p="Repositories" t="Include" />
+        <e p="Repositories" t="Include">
+          <e p="PostRepository.cs" t="Include" />
+        </e>
+        <e p="script.sql" t="Include" />
       </e>
       <e p="Postter.Infrastructure.IoC" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
@@ -86,18 +107,11 @@
           <e p="RolesController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
-        <e p="Data" t="Include">
-          <e p="ApplicationDbContext.cs" t="Include" />
-        </e>
-        <e p="Migrations" t="Include">
-          <e p="20210428220101_init.cs" t="Include" />
-          <e p="20210428220101_init.Designer.cs" t="Include" />
-          <e p="20210510171837_inits.cs" t="Include" />
-          <e p="20210510171837_inits.Designer.cs" t="Include" />
-          <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
-        </e>
+        <e p="Data" t="Include" />
+        <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
+          <e p="IndexViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -107,6 +121,7 @@
             </e>
           </e>
         </e>
+        <e p="package-lock.json" t="Include" />
         <e p="Postter.Presentation.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -134,6 +149,7 @@
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LoginPartial.cshtml" t="Include" />
+            <e p="_Post.cshtml" t="Include" />
             <e p="_SimpleLayout.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
             <e p="Error.cshtml" t="Include" />
@@ -148,6 +164,10 @@
             <e p="style.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
+          <e p="files" t="Include">
+            <e p="bad2032089daf5abf495f9de71144402.png" t="Include" />
+            <e p="Screenshot 2021-05-16 at 16.03.00.png" t="Include" />
+          </e>
           <e p="js" t="Include">
             <e p="script.js" t="Include" />
             <e p="site.js" t="Include" />
@@ -190,6 +210,15 @@
               </e>
               <e p="LICENSE.txt" t="Include" />
             </e>
+            <e p="jquery-ajax-unobtrusive" t="Include">
+              <e p="dist" t="Include">
+                <e p="jquery.unobtrusive-ajax.js" t="Include" />
+                <e p="jquery.unobtrusive-ajax.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+              <e p="package.json" t="Include" />
+              <e p="README.md" t="Include" />
+            </e>
             <e p="jquery-validation" t="Include">
               <e p="dist" t="Include">
                 <e p="additional-methods.js" t="Include" />
@@ -212,6 +241,13 @@
     </e>
     <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_bootstrap@4.6.0_dist_css_bootstrap.css" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_bootstrap@4.6.0_dist_js_bootstrap.bundle.js" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.1.1.js" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.1.1.slim.js" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.5.1.js" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.5.1.slim.js" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_kit.fontawesome.com_8babd71c95.js" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.3/resharper-host/local/Transient/Rider/v203/SolutionCaches/_Postter.1246245311.00" t="ExcludeRecursive" />
   </component>

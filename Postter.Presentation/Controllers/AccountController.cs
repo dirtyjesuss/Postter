@@ -13,8 +13,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Postter.Infrastructure.Data;
 using Postter.Infrastructure.Data.Context;
-using Postter.Presentation.Data;
 
 namespace Postter.Presentation.Controllers
 {

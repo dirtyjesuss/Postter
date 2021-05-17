@@ -10,9 +10,9 @@ using Postter.Infrastructure.Data.Context;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Postter.Domain.Models;
-using Postter.Presentation.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Postter.Infrastructure.Data;
 
 namespace Postter.Presentation.Controllers
 {

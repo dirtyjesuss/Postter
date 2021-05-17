@@ -494,3 +494,6 @@ C:/Users/mezin/Desktop/rePostter/Postter/Postter.Presentation/obj/Debug/net5.0/R
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/Debug/net5.0/ref/Postter.Presentation.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.pdb
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.genruntimeconfig.cache
+/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/bin/Debug/net5.0/libman.json
+/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/bin/Debug/net5.0/package-lock.json
+/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Shared/_Post.cshtml.g.cs

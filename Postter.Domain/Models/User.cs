@@ -12,5 +12,7 @@ namespace Postter.Domain.Models
         public string Image_path { get; set; }
         [Required(ErrorMessage = "Укажите что-то о себе")]
         public string Bio { get; set; }
+
+        public ICollection<Post> Posts { get; set; }
     }
 }

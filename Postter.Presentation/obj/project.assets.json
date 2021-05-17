@@ -11,6 +11,15 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "jQuery/1.8.0": {
+        "type": "package"
+      },
+      "jQuery.Ajax.Unobtrusive/2.0.20710": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.jQuery.Unobtrusive.Ajax": "2.0.20613"
+        }
+      },
       "Microsoft.AspNet.Identity.Core/2.2.3": {
         "type": "package",
         "compile": {
@@ -844,6 +853,12 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
+        }
+      },
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.8.0"
         }
       },
       "Microsoft.Net.Http.Headers/2.2.0": {
@@ -2883,21 +2898,24 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Identity": "2.2.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
+          "Postter.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Postter.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/Postter.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.UI": "5.0.0",
-          "Postter.Application": "1.0.0"
+          "Microsoft.AspNetCore.Identity.UI": "5.0.0"
         },
         "compile": {
           "bin/placeholder/Postter.Domain.dll": {}
@@ -2913,6 +2931,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.AspNet.Identity.Owin": "2.2.3",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.0",
           "Postter.Domain": "1.0.0"
@@ -2932,6 +2953,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "Postter.Application": "1.0.0",
           "Postter.Infrastructure.Data": "1.0.0"
         },
         "compile": {
@@ -2961,6 +2983,36 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "jQuery/1.8.0": {
+      "sha512": "laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw==",
+      "type": "package",
+      "path": "jquery/1.8.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.8.0-vsdoc.js",
+        "Content/Scripts/jquery-1.8.0.js",
+        "Content/Scripts/jquery-1.8.0.min.js",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.8.0.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.8.0.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "jQuery.Ajax.Unobtrusive/2.0.20710": {
+      "sha512": "Pi9soMRdzL30AMb/gXPLjTLzjYs3/Ac0S51h4M28Iyc4rYQ4ln1fZxPTEmEbnUYRZzuP2b5P2saBq9llJ1e1tg==",
+      "type": "package",
+      "path": "jquery.ajax.unobtrusive/2.0.20710",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "jquery.ajax.unobtrusive.2.0.20710.nupkg.sha512",
+        "jquery.ajax.unobtrusive.nuspec"
       ]
     },
     "Microsoft.AspNet.Identity.Core/2.2.3": {
@@ -4128,6 +4180,19 @@
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
         "microsoft.identitymodel.tokens.5.6.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "sha512": "udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "type": "package",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery.unobtrusive-ajax.js",
+        "Content/Scripts/jquery.unobtrusive-ajax.min.js",
+        "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512",
+        "microsoft.jquery.unobtrusive.ajax.nuspec"
       ]
     },
     "Microsoft.Net.Http.Headers/2.2.0": {
@@ -9077,9 +9142,12 @@
       "Microsoft.Owin.Security.Cookies >= 3.0.1",
       "Microsoft.Owin.Security.Google >= 3.0.1",
       "Microsoft.Owin.Security.OAuth >= 4.1.1",
+      "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.6",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 5.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
-      "Postter.Infrastructure.IoC >= 1.0.0"
+      "Postter.Application >= 1.0.0",
+      "Postter.Infrastructure.IoC >= 1.0.0",
+      "jQuery.Ajax.Unobtrusive >= 2.0.20710"
     ]
   },
   "packageFolders": {
@@ -9107,6 +9175,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "/Users/ruslankhanov/Documents/IT/Postter/Postter.Application/Postter.Application.csproj": {
+              "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Application/Postter.Application.csproj"
+            },
             "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/Postter.Infrastructure.IoC.csproj": {
               "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/Postter.Infrastructure.IoC.csproj"
             }
@@ -9183,6 +9254,10 @@
             "target": "Package",
             "version": "[4.1.1, )"
           },
+          "Microsoft.jQuery.Unobtrusive.Ajax": {
+            "target": "Package",
+            "version": "[3.2.6, )"
+          },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[5.0.0, )"
@@ -9190,6 +9265,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
             "target": "Package",
             "version": "[1.1.0, )"
+          },
+          "jQuery.Ajax.Unobtrusive": {
+            "target": "Package",
+            "version": "[2.0.20710, )"
           }
         },
         "imports": [

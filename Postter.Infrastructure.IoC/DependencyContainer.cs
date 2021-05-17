@@ -1,4 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
+using Postter.Application.Interfaces;
+using Postter.Application.Services;
+using Postter.Domain.Interfaces;
+using Postter.Infrastructure.Data.Repositories;
 
 namespace Postter.Infrastructure.IoC
 {
@@ -7,10 +11,10 @@ namespace Postter.Infrastructure.IoC
         public static void RegisterServices(IServiceCollection services)
         {
             //Postter.Application
-            //services.AddScoped<..., ...>();
+            services.AddScoped<IPostService, PostService>();
 
             //Postter.Domain.Interfaces | Postter.Infrastructure.Data.Repositories
-            //services.AddScoped<..., ...>();
+            services.AddScoped<IPostRepository, PostRepository>();
         }
     }
 }

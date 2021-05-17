@@ -19,17 +19,51 @@ namespace Postter.Infrastructure.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("Postter.Domain.Models.User", b =>
+            modelBuilder.Entity("Postter.Domain.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .UseIdentityByDefaultColumn();
 
+                    b.Property<string>("AttachmentPath")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ReplyToId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("RepostFromId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReplyToId");
+
+                    b.HasIndex("RepostFromId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Posts");
+                });
+
+            modelBuilder.Entity("Postter.Domain.Models.User", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("integer");
 
                     b.Property<string>("Bio")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -49,9 +83,6 @@ namespace Postter.Infrastructure.Data.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("text");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("text");
@@ -82,7 +113,30 @@ namespace Postter.Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Postter.Domain.Models.Post", b =>
+                {
+                    b.HasOne("Postter.Domain.Models.User", "ReplyTo")
+                        .WithMany()
+                        .HasForeignKey("ReplyToId");
+
+                    b.HasOne("Postter.Domain.Models.User", "RepostFrom")
+                        .WithMany()
+                        .HasForeignKey("RepostFromId");
+
+                    b.HasOne("Postter.Domain.Models.User", "Author")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("ReplyTo");
+
+                    b.Navigation("RepostFrom");
                 });
 #pragma warning restore 612, 618
         }
