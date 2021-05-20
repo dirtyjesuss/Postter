@@ -32,6 +32,7 @@
           <e p="IPostRepository.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="Follower.cs" t="Include" />
           <e p="Post.cs" t="Include" />
           <e p="User.cs" t="Include" />
         </e>
@@ -60,6 +61,22 @@
             <e p="20210516144132_PostModelUpdate.Designer.cs" t="Include" />
             <e p="20210516144915_PostModelUpdate1.cs" t="Include" />
             <e p="20210516144915_PostModelUpdate1.Designer.cs" t="Include" />
+            <e p="20210519200843_FollowersModel.cs" t="Include" />
+            <e p="20210519200843_FollowersModel.Designer.cs" t="Include" />
+            <e p="20210519202300_FollowersPropContext.cs" t="Include" />
+            <e p="20210519202300_FollowersPropContext.Designer.cs" t="Include" />
+            <e p="20210519215320_FollowersDeleteBehaviour.cs" t="Include" />
+            <e p="20210519215320_FollowersDeleteBehaviour.Designer.cs" t="Include" />
+            <e p="20210519224035_FollowersModelCreatingEdit.cs" t="Include" />
+            <e p="20210519224035_FollowersModelCreatingEdit.Designer.cs" t="Include" />
+            <e p="20210519224835_FollowersModelCreatingEdit1.cs" t="Include" />
+            <e p="20210519224835_FollowersModelCreatingEdit1.Designer.cs" t="Include" />
+            <e p="20210519225202_FollowersModelCreatingEdit2.cs" t="Include" />
+            <e p="20210519225202_FollowersModelCreatingEdit2.Designer.cs" t="Include" />
+            <e p="20210519235002_FollowersModelCreatingEdit4.cs" t="Include" />
+            <e p="20210519235002_FollowersModelCreatingEdit4.Designer.cs" t="Include" />
+            <e p="20210520090909_PostedTimeInPostModel.cs" t="Include" />
+            <e p="20210520090909_PostedTimeInPostModel.Designer.cs" t="Include" />
             <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
           </e>
           <e p="UserDbContextModelSnapshot.cs" t="Include" />
@@ -104,6 +121,7 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="ProfileController.cs" t="Include" />
           <e p="RolesController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
@@ -112,6 +130,7 @@
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="IndexViewModel.cs" t="Include" />
+          <e p="ProfileViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -140,6 +159,9 @@
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
           </e>
+          <e p="Profile" t="Include">
+            <e p="Profile.cshtml" t="Include" />
+          </e>
           <e p="Roles" t="Include">
             <e p="Create.cshtml" t="Include" />
             <e p="Edit.cshtml" t="Include" />
@@ -147,6 +169,7 @@
             <e p="UserList.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
+            <e p="_Following.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LoginPartial.cshtml" t="Include" />
             <e p="_Post.cshtml" t="Include" />
@@ -167,6 +190,7 @@
           <e p="files" t="Include">
             <e p="bad2032089daf5abf495f9de71144402.png" t="Include" />
             <e p="Screenshot 2021-05-16 at 16.03.00.png" t="Include" />
+            <e p="tumblr_nt6sl4wGhv1rhenqeo1_500.png" t="Include" />
           </e>
           <e p="js" t="Include">
             <e p="script.js" t="Include" />

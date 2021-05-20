@@ -20,6 +20,8 @@ using Postter.Application.Interfaces;
 using Postter.Presentation.Models;
 using Postter.Application.ViewModels;
 using Postter.Domain.Models;
+using Postter.Infrastructure.Data.Context;
+
 namespace Postter.Presentation.Controllers
 {
     [Authorize]
@@ -29,7 +31,7 @@ namespace Postter.Presentation.Controllers
         private readonly SignInManager<User> _signInManager;
         private readonly IWebHostEnvironment _appEnvironment;
         private readonly Microsoft.AspNetCore.Identity.UserManager<User> _userManager;
-        private readonly IPostService _postService; 
+        private readonly IPostService _postService;
         
         public HomeController(ILogger<HomeController> logger, SignInManager<User> signInManager, IWebHostEnvironment appEnvironment, Microsoft.AspNetCore.Identity.UserManager<User> userManager, IPostService postService)
         {
@@ -43,9 +45,17 @@ namespace Postter.Presentation.Controllers
         {
             if (_signInManager.IsSignedIn(User))
             {
-                var model = new IndexViewModel()
+                var currentUser = await _userManager.GetUserAsync(User);
+                var posts = currentUser.Following
+                    .Select(f => f.Follows)
+                    .Select(u => u.Posts)
+                    .SelectMany(p => p)
+                    .Concat(currentUser.Posts)
+                    .OrderByDescending(p => p.PostedTime).ToList();
+                var model = new IndexViewModel
                 {
-                    CurrentUser = await _userManager.GetUserAsync(User)
+                    CurrentUser = currentUser,
+                    PostViewModel = new PostViewModel { Posts = posts }
                 };
                 return View(model);
             }
@@ -72,13 +82,10 @@ namespace Postter.Presentation.Controllers
         {
             var currentUser = await _userManager.GetUserAsync(User);
 
-            var post = new Post()
+            var post = new Post
             {
-                UserId = currentUser.Id,
-                Author = currentUser
+                UserId = currentUser.Id, Author = currentUser, PostedTime = DateTime.Now, Text = text ?? "bruh"
             };
-            
-            post.Text = text ?? "bruh";
             
             if (uploadedFile != null)
             {

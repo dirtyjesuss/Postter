@@ -1,4 +1,5 @@
-﻿@model IndexViewModel
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model IndexViewModel
 @{
     ViewData["Title"] = "Main page";
 }
@@ -54,40 +55,9 @@
     <div style="height: 13px"></div>
     <!--Content-->
     <div id="content">
-
-        <div class="postter-box postter-box-post">
-            <div class="row m-0">
-                <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
-                    <img class="avatar-img-sm"
-                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
-                </div>
-                <div class="col-10 pl-0 pr-5 py-4">
-                    <span class="semi-bold-text">BRUH</span><span class="secondary-text pl-2">@@bruh_666</span>
-                    <p style="color: white">BRUH BRUH BRUH BRUH bruh bruh bruh bruh bruh bruh bruh bruh</p>
-                    <img class="content-image"
-                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
-                    <div class="row m-0 pt-4 d-flex justify-content-center">
-                        <div class="col-4 p-0">
-                            <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <span class="secondary-text">11.2k</span>
-                        </div>
-                        <div class="col-4 p-0">
-                            <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
-                                <i class="fas fa-retweet"></i>
-                            </button>
-                            <span class="secondary-text">11.2k</span>
-                        </div>
-                        <div class="col-4 p-0">
-                            <button class="postter-icon-button" data-toggle="modal" data-target="#replyModal" style="color: var(--darkGray); font-size: 23px">
-                                <i class="far fa-comment"></i>
-                            </button>
-                            <span class="secondary-text">11.2k</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @foreach (var post in Model.PostViewModel.Posts)
+        {
+            @await Html.PartialAsync("_Post", post)
+        }
     </div>
 }

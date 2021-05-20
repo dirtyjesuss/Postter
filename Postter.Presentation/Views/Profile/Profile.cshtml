@@ -1,0 +1,95 @@
+@using Postter.Application.ViewModels
+@model ProfileViewModel
+
+@{
+    ViewData["Title"] = Model.CurrentUser.UserName;
+}
+
+<div class="postter-box">
+    <img class="profile-background-img" src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+    @if (Model.IsCurrentUser)
+    {
+        <div class="d-flex justify-content-end pt-3 pr-3">
+            <button class="postter-button">Edit</button>
+        </div>
+    }
+    <div class="d-flex flex-column">
+        <div class="ml-3 pb-2" style="margin-top: -130px">
+            <img class="avatar-img-lg"
+                 src="@Model.CurrentUser.Image_path">
+        </div>
+        <div class="pl-3">
+            <div class="semi-bold-text" style="font-weight: bold; font-size: 22px;">@Model.CurrentUser.UserName</div>
+        </div>
+        <div class="pl-3">
+            <div class="secondary-text">user</div>
+        </div>
+        <div class="d-flex align-items-center pl-3 py-3">
+            <div class="semi-bold-text">@Model.CurrentUser.Followers.Count</div>
+            <div class="secondary-text pl-2">followers</div>
+            <div class="semi-bold-text pl-3">@Model.CurrentUser.Following.Count</div>
+            <div class="secondary-text pl-2">following</div>
+        </div>
+    </div>
+</div>
+<div class="postter-box" id="navbar">
+    <ul class="nav semi-bold-text d-flex" style="font-size: 16px">
+        <li class="nav-item flex-fill text-center align-items-center">
+            <a class="nav-link active py-3" href="#">Posts</a>
+        </li>
+        <li class="nav-item flex-fill text-center">
+            <a class="nav-link py-3 px-1" href="#">Posts and replies</a>
+        </li>
+        <li class="nav-item flex-fill text-center">
+            <a class="nav-link py-3" href="#">Media</a>
+        </li>
+        <li class="nav-item flex-fill text-center">
+            <a class="nav-link py-3" href="#">Liked</a>
+        </li>
+    </ul>
+</div>
+<script>
+        $(document).ready(function () {
+            $("#navbar").on("click", ".nav-item", function () {
+                $(".nav .nav-item").removeClass("active");
+                $(".nav .nav-link").removeClass("active");
+                $("#posts .tab").removeClass("active");
+
+                $(this).addClass("active");
+                $(".nav .nav-link").eq($(this).index()).addClass("active");
+                $("#posts .tab").eq($(this).index()).addClass("active");
+            })
+        })
+    </script>
+<div id="posts">
+    <div class="tab active">
+        @foreach (var post in Model.CurrentUser.Posts)
+        {
+            if (post.ReplyTo == null)
+            {
+                @await Html.PartialAsync("_Post", post)
+            }
+        }
+    </div>
+    <div class="tab">
+        @foreach (var post in Model.CurrentUser.Posts)
+        {
+            if (post.RepostFrom == null)
+            {
+                @await Html.PartialAsync("_Post", post)
+            }
+        }
+    </div>
+    <div class="tab">
+        @foreach (var post in Model.CurrentUser.Posts)
+        {
+            if (post.AttachmentPath != null)
+            {
+                @await Html.PartialAsync("_Post", post)
+            }
+        }
+    </div>
+    <div class="tab">
+        AAAAAAAAAA
+    </div>
+</div>

@@ -7,12 +7,20 @@ namespace Postter.Domain.Models
 {
     public class User : IdentityUser
     {
+        public User()
+        {
+            Posts = new List<Post>();
+            Followers = new List<Follower>();
+            Following = new List<Follower>();
+        }
         public string Email { get; set; }
         public string Password { get; set; }
         public string Image_path { get; set; }
         [Required(ErrorMessage = "Укажите что-то о себе")]
         public string Bio { get; set; }
 
-        public ICollection<Post> Posts { get; set; }
+        public virtual ICollection<Post> Posts { get; set; }
+        public virtual ICollection<Follower> Followers { get; set; }
+        public virtual ICollection<Follower> Following { get; set; }
     }
 }

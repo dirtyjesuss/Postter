@@ -219,6 +219,28 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("Postter.Domain.Models.Follower", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<string>("FollowsId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FollowsId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Followers");
+                });
+
             modelBuilder.Entity("Postter.Domain.Models.Post", b =>
                 {
                     b.Property<int>("Id")
@@ -228,6 +250,9 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
 
                     b.Property<string>("AttachmentPath")
                         .HasColumnType("text");
+
+                    b.Property<DateTime>("PostedTime")
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<int?>("ReplyToId")
                         .HasColumnType("integer");
@@ -322,6 +347,23 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Postter.Domain.Models.Follower", b =>
+                {
+                    b.HasOne("Postter.Domain.Models.User", "Follows")
+                        .WithMany("Followers")
+                        .HasForeignKey("FollowsId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("Postter.Domain.Models.User", "User")
+                        .WithMany("Following")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Follows");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Postter.Domain.Models.Post", b =>
                 {
                     b.HasOne("Postter.Domain.Models.Post", "ReplyTo")
@@ -347,6 +389,10 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
 
             modelBuilder.Entity("Postter.Domain.Models.User", b =>
                 {
+                    b.Navigation("Followers");
+
+                    b.Navigation("Following");
+
                     b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618

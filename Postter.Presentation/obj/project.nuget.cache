@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4eBr8k5RDjm9EWTX0kN192T1PxBqLWXvn04T12GvFAV833srXM6q8cniHOvZFH5Qh9ZWlBhMiz0MFCu/L3GgKw==",
+  "dgSpecHash": "SuYBarRyiKPEXAtJpo2D6h59XFhrA55NFfdJahi/NYVpFijy+9rsn9nDiUNKXe3ELMfBZGFUgVJH+B1DgsaJ/A==",
   "success": true,
   "projectFilePath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/Postter.Presentation.csproj",
   "expectedPackageFiles": [
+    "/Users/ruslankhanov/.nuget/packages/castle.core/4.4.1/castle.core.4.4.1.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/jquery/1.8.0/jquery.1.8.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/jquery.ajax.unobtrusive/2.0.20710/jquery.ajax.unobtrusive.2.0.20710.nupkg.sha512",
@@ -38,6 +39,7 @@
     "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.0/microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.0/microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.design/5.0.0/microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
+    "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.proxies/5.0.0/microsoft.entityframeworkcore.proxies.5.0.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.0/microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.relational.design/1.1.0/microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/microsoft.entityframeworkcore.sqlite/5.0.0/microsoft.entityframeworkcore.sqlite.5.0.0.nupkg.sha512",
@@ -121,6 +123,7 @@
     "/Users/ruslankhanov/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "/Users/ruslankhanov/.nuget/packages/system.diagnostics.tracesource/4.3.0/system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512",
     "/Users/ruslankhanov/.nuget/packages/system.dynamic.runtime/4.3.0/system.dynamic.runtime.4.3.0.nupkg.sha512",
