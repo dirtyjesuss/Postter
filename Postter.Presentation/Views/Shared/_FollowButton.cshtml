@@ -1,0 +1,15 @@
+@model ProfileViewModel
+
+<div class="d-flex justify-content-end pt-3 pr-3">
+    @{
+        Console.WriteLine(Model.User.Id);
+    }
+    @if (Model.CurrentUser.IsFollows(Model.User.Id))
+    {
+        <button class="postter-button" type="submit">Unfollow</button>
+    }
+    else
+    {
+        <button class="postter-button" type="submit">Follow</button>
+    }
+</div>

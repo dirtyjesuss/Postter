@@ -6,6 +6,7 @@
       <e p="Postter.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Interfaces" t="Include">
+          <e p="IFollowerService.cs" t="Include" />
           <e p="IPostService.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -17,6 +18,7 @@
         </e>
         <e p="Postter.Application.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include">
+          <e p="FollowerService.cs" t="Include" />
           <e p="PostService.cs" t="Include" />
         </e>
         <e p="ViewModels" t="Include">
@@ -29,6 +31,7 @@
       <e p="Postter.Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Interfaces" t="Include">
+          <e p="IFollowerRepository.cs" t="Include" />
           <e p="IPostRepository.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -77,6 +80,8 @@
             <e p="20210519235002_FollowersModelCreatingEdit4.Designer.cs" t="Include" />
             <e p="20210520090909_PostedTimeInPostModel.cs" t="Include" />
             <e p="20210520090909_PostedTimeInPostModel.Designer.cs" t="Include" />
+            <e p="20210529175114_FollowerPK.cs" t="Include" />
+            <e p="20210529175114_FollowerPK.Designer.cs" t="Include" />
             <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
           </e>
           <e p="UserDbContextModelSnapshot.cs" t="Include" />
@@ -90,6 +95,7 @@
         </e>
         <e p="Postter.Infrastructure.Data.csproj" t="IncludeRecursive" />
         <e p="Repositories" t="Include">
+          <e p="FollowerRepository.cs" t="Include" />
           <e p="PostRepository.cs" t="Include" />
         </e>
         <e p="script.sql" t="Include" />
@@ -169,6 +175,7 @@
             <e p="UserList.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
+            <e p="_FollowButton.cshtml" t="Include" />
             <e p="_Following.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LoginPartial.cshtml" t="Include" />
@@ -267,6 +274,7 @@
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_bootstrap@4.6.0_dist_css_bootstrap.css" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_bootstrap@4.6.0_dist_js_bootstrap.bundle.js" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdn.jsdelivr.net_npm_bootstrap@5.0.0-beta2_dist_css_bootstrap.css" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.1.1.js" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.1.1.slim.js" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_code.jquery.com_jquery-3.5.1.js" t="IncludeRecursive" />

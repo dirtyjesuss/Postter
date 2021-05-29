@@ -14,7 +14,7 @@
                 <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
             </form>
         </li>*@
-    <a class="profile-preview">
+    <a class="profile-preview" asp-controller="Profile" asp-action="Profile" asp-route-id="@null">
         <div class="row m-0">
             <div class="col-2 p-0">
                 <img class="avatar-img-sm" src="@Model.CurrentUser?.Image_path" alt="404">

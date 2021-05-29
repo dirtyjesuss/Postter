@@ -7,7 +7,7 @@
                  src="@Model.Author.Image_path" alt="No avatar">
         </div>
         <div class="col-10 pl-0 pr-5 py-4">
-            <span class="semi-bold-text">@Model.Author.UserName</span><span class="secondary-text pl-2">@Model.PostedTime.ToString("MM/dd/yyyy HH:mm")</span>
+            <span class="semi-bold-text"><a asp-controller="Profile" asp-action="Profile" asp-route-id="@Model.Author.Id">@Model.Author.UserName</a></span><span class="secondary-text pl-2">@Model.PostedTime.ToString("MM/dd/yyyy HH:mm")</span>
             <p style="color: white">@Model.Text</p>
             @if (Model.AttachmentPath != null)
             {

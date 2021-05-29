@@ -12,9 +12,11 @@ namespace Postter.Infrastructure.IoC
         {
             //Postter.Application
             services.AddScoped<IPostService, PostService>();
+            services.AddScoped<IFollowerService, FollowerService>();
 
             //Postter.Domain.Interfaces | Postter.Infrastructure.Data.Repositories
             services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<IFollowerRepository, FollowerRepository>();
         }
     }
 }

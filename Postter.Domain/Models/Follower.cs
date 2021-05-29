@@ -6,6 +6,7 @@ namespace Postter.Domain.Models
 {
     public class Follower
     {
+        [Key]
         public int Id { get; set; }
         public string UserId { get; set; }
         public string FollowsId { get; set; }

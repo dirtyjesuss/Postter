@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using System.Text;
 using Microsoft.AspNetCore.Identity;
 namespace Postter.Domain.Models
@@ -22,5 +23,10 @@ namespace Postter.Domain.Models
         public virtual ICollection<Post> Posts { get; set; }
         public virtual ICollection<Follower> Followers { get; set; }
         public virtual ICollection<Follower> Following { get; set; }
+
+        public bool IsFollows(string userId)
+        {
+            return Following?.Any(f => f.FollowsId == userId) ?? false;
+        }
     }
 }
