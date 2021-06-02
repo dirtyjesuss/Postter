@@ -15,6 +15,8 @@ namespace Postter.Infrastructure.Data.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Follower> Followers { get; set; }
+        
+        public DbSet<Message> Messages { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,6 +36,19 @@ namespace Postter.Infrastructure.Data.Context
                 .HasMany<Follower>(u => u.Following)
                 .WithOne(f => f.User)
                 .HasForeignKey(f => f.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
+            
+            modelBuilder.Entity<Message>()
+                .HasKey(m => m.Id);
+            modelBuilder.Entity<User>()
+                .HasMany<Message>(u => u.SentMessages)
+                .WithOne(m => m.Sender)
+                .HasForeignKey(m => m.SenderId)
+                .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<User>()
+                .HasMany<Message>(u => u.ReceivedMessages)
+                .WithOne(m => m.Receiver)
+                .HasForeignKey(m => m.ReceiverId)
                 .OnDelete(DeleteBehavior.NoAction);
         }
 

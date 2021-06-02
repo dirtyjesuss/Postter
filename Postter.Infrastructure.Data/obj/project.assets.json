@@ -2721,10 +2721,7 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Domain.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -8687,19 +8684,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mezin\\.nuget\\packages\\": {}
+    "/Users/ruslankhanov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.Data\\Postter.Infrastructure.Data.csproj",
+      "projectUniqueName": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/Postter.Infrastructure.Data.csproj",
       "projectName": "Postter.Infrastructure.Data",
-      "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.Data\\Postter.Infrastructure.Data.csproj",
-      "packagesPath": "C:\\Users\\mezin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.Data\\obj\\",
+      "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/Postter.Infrastructure.Data.csproj",
+      "packagesPath": "/Users/ruslankhanov/.nuget/packages/",
+      "outputPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mezin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/ruslankhanov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -8711,8 +8708,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Domain\\Postter.Domain.csproj": {
-              "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Domain\\Postter.Domain.csproj"
+            "/Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/Postter.Domain.csproj": {
+              "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/Postter.Domain.csproj"
             }
           }
         }
@@ -8783,14 +8780,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -241,6 +241,31 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
                     b.ToTable("Followers");
                 });
 
+            modelBuilder.Entity("Postter.Domain.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<string>("ReceiverId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("SenderId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReceiverId");
+
+                    b.HasIndex("SenderId");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("Postter.Domain.Models.Post", b =>
                 {
                     b.Property<int>("Id")
@@ -364,6 +389,23 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Postter.Domain.Models.Message", b =>
+                {
+                    b.HasOne("Postter.Domain.Models.User", "Receiver")
+                        .WithMany("ReceivedMessages")
+                        .HasForeignKey("ReceiverId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("Postter.Domain.Models.User", "Sender")
+                        .WithMany("SentMessages")
+                        .HasForeignKey("SenderId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Receiver");
+
+                    b.Navigation("Sender");
+                });
+
             modelBuilder.Entity("Postter.Domain.Models.Post", b =>
                 {
                     b.HasOne("Postter.Domain.Models.Post", "ReplyTo")
@@ -394,6 +436,10 @@ namespace Postter.Infrastructure.Data.Migrations.ApplicationDb
                     b.Navigation("Following");
 
                     b.Navigation("Posts");
+
+                    b.Navigation("ReceivedMessages");
+
+                    b.Navigation("SentMessages");
                 });
 #pragma warning restore 612, 618
         }

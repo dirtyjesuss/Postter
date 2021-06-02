@@ -13,6 +13,8 @@ namespace Postter.Domain.Models
             Posts = new List<Post>();
             Followers = new List<Follower>();
             Following = new List<Follower>();
+            SentMessages = new List<Message>();
+            ReceivedMessages = new List<Message>();
         }
         public string Email { get; set; }
         public string Password { get; set; }
@@ -23,6 +25,9 @@ namespace Postter.Domain.Models
         public virtual ICollection<Post> Posts { get; set; }
         public virtual ICollection<Follower> Followers { get; set; }
         public virtual ICollection<Follower> Following { get; set; }
+
+        public virtual ICollection<Message> SentMessages { get; set; }
+        public virtual ICollection<Message> ReceivedMessages { get; set; }
 
         public bool IsFollows(string userId)
         {
