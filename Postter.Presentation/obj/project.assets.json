@@ -2967,7 +2967,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Domain/1.0.0": {
         "type": "project",
@@ -2980,7 +2983,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Infrastructure.Data/1.0.0": {
         "type": "project",
@@ -3001,7 +3007,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Infrastructure.Data.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Infrastructure.IoC/1.0.0": {
         "type": "project",
@@ -3016,7 +3025,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Infrastructure.IoC.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -9283,19 +9295,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ruslankhanov/.nuget/packages/": {}
+    "C:\\Users\\mezin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/Postter.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
       "projectName": "Postter.Presentation",
-      "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/Postter.Presentation.csproj",
-      "packagesPath": "/Users/ruslankhanov/.nuget/packages/",
-      "outputPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/",
+      "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Presentation\\Postter.Presentation.csproj",
+      "packagesPath": "C:\\Users\\mezin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ruslankhanov/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mezin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -9307,11 +9319,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/ruslankhanov/Documents/IT/Postter/Postter.Application/Postter.Application.csproj": {
-              "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Application/Postter.Application.csproj"
+            "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Application\\Postter.Application.csproj": {
+              "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Application\\Postter.Application.csproj"
             },
-            "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/Postter.Infrastructure.IoC.csproj": {
-              "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Infrastructure.IoC/Postter.Infrastructure.IoC.csproj"
+            "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.IoC\\Postter.Infrastructure.IoC.csproj": {
+              "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.IoC\\Postter.Infrastructure.IoC.csproj"
             }
           }
         }
@@ -9421,7 +9433,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   },

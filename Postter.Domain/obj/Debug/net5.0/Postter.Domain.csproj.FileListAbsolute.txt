@@ -55,3 +55,15 @@ C:/Users/mezin/Desktop/Fuck you❕/Postter/Postter.Domain/obj/Debug/net5.0/Postt
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/obj/Debug/net5.0/Postter.Domain.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/obj/Debug/net5.0/ref/Postter.Domain.dll
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/obj/Debug/net5.0/Postter.Domain.pdb
+C:\Users\mezin\Desktop\Postter\Postter.Domain\bin\Debug\net5.0\Postter.Domain.deps.json
+C:\Users\mezin\Desktop\Postter\Postter.Domain\bin\Debug\net5.0\Postter.Domain.dll
+C:\Users\mezin\Desktop\Postter\Postter.Domain\bin\Debug\net5.0\ref\Postter.Domain.dll
+C:\Users\mezin\Desktop\Postter\Postter.Domain\bin\Debug\net5.0\Postter.Domain.pdb
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.csprojAssemblyReference.cache
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.AssemblyInfoInputs.cache
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.AssemblyInfo.cs
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.dll
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\ref\Postter.Domain.dll
+C:\Users\mezin\Desktop\Postter\Postter.Domain\obj\Debug\net5.0\Postter.Domain.pdb

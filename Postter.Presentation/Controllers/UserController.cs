@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Postter.Infrastructure.Data;
 
 namespace Postter.Presentation.Controllers
-{
+{ 
     [ApiController]
    [Route("api/[controller]")]
     public class UserController : ControllerBase
@@ -29,7 +29,6 @@ namespace Postter.Presentation.Controllers
             db = context;
             _userManager = userManager;
         }
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> Get()
         {
@@ -50,10 +49,14 @@ namespace Postter.Presentation.Controllers
             
             var currentUserId = _userManager.GetUserId(User);
             User user;
+            User ser = new User();
             if (id =='0'.ToString()) 
             {
                 user = await _userManager.FindByIdAsync(currentUserId);
-                return new ObjectResult(user);
+                ser.Id = user.Id;
+                ser.UserName = user.UserName;
+                ser.Bio = user.Bio;
+                return new ObjectResult(ser);
             }
             else
             {
@@ -63,16 +66,22 @@ namespace Postter.Presentation.Controllers
                     return NotFound();
                 }
 
-                return new ObjectResult(user);
+                ser.Id = user.Id;
+                ser.UserName = user.UserName;
+                ser.Bio = user.Bio;
+                return new ObjectResult(ser);
             }
 
             return user;
         }
 
-        [HttpPost]
+        [HttpPut]
         public async Task<ActionResult<User>> Put(User changeUser)
         {
-            var oldUser = await _userManager.FindByEmailAsync(changeUser.Email);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            
+            var oldUser = await _userManager.FindByNameAsync(changeUser.UserName);
             if (oldUser == null)
             {
                 return BadRequest();

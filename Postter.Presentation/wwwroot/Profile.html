@@ -8,6 +8,8 @@
 </head>
 <body>
 <h2>Список пользователей</h2>
+<div id="errors" class="alert alert-danger" style="display:none;"></div>
+
 <div name="userinfo" id="userinfo">
     <div name="id" id="id"></div>
     <div name="name" id="name"></div>
@@ -18,7 +20,7 @@
     
     <div class="form-group col-md-5">
         <label for="bio">О себе:</label>
-        <input class="form-control" name="age" type="text" />
+        <input class="form-control" name="bioinput" type="text" />
     </div>
     <div class="card">
         <div class="card-body">
@@ -29,7 +31,7 @@
             </div>
             <div class="form-group col-md-5">
                 <label for="bio">Пароль:</label>
-                <input class="form-control" name="age" type="password" />
+                <input class="form-control" name="password" type="password" />
             </div>
         </div>
     </div>
@@ -69,7 +71,7 @@
     // Получение одного пользователя
     async function GetUser(id) {
         debugger;
-        const response = await fetch("/api/user/" + id, {
+        const response = await fetch("/api/user/" + id , {
             method: "GET",
             headers: { "Accept": "application/json" }
         });
@@ -98,7 +100,22 @@
         if (response.ok === true) {
             const user = await response.json();
             reset();
-            document.querySelector("tr[data-rowid='" + user.id + "']").replaceWith(row(user));
+            let userbio = document.getElementById('bio')
+            
+            userbio.innerHTML = userBio;
+        }
+        else {
+            const errorData = await response.json();
+            console.log("errors", errorData);
+            if (errorData) {
+                // ошибки вследствие валидации по атрибутам
+                if (errorData.errors) {
+                    if (errorData.errors["Bio"]) {
+                        addError(errorData.errors["Bio"]);
+                    }
+                }
+            }
+            document.getElementById("errors").style.display = "block";
         }
     }
 
@@ -107,6 +124,13 @@
         const form = document.forms["userForm"];
         form.reset();
         form.elements["id"].value = 0;
+    }
+    function addError(errors) {
+        errors.forEach(error => {
+            const p = document.createElement("p");
+            p.append(error);
+            document.getElementById("errors").append(p);
+        });
     }
     // создание строки для таблицы
     function row(user) {
@@ -162,9 +186,10 @@
         e.preventDefault();
         const form = document.forms["userForm"];
         const name = form.elements["name"].value;
-        const bio = form.elements["bio"].value;
+        const bio = form.elements["bioinput"].value;
         const password = form.elements["password"].value;
-            EditUser(name, bio,);
+        if(name!=null && bio!=null && password!=null)
+            EditUser(name, bio, password);
     });
 
     // загрузка пользователей
