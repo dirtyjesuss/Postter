@@ -55,11 +55,11 @@
             <i class="fas fa-home" style="width: 23px; height: 23px; margin-right: 3px"></i>
             <span>Home</span>
         </a>
-        <a href="#">
-            <i class="far fa-bell" style="width: 23px; height: 23px; margin-right: 3px; margin-left: 1px"></i>
+        <a href="#" class="active">
+            <i class="far fa-bell" style="width: 23px; height: 23px; margin-right: 3px; margin-left: 1px" ></i>
             <span>Notifications</span>
         </a>
-        <a asp-controller="Profile" asp-action="Profile" asp-route-id="@null">
+        <a asp-controller="Profile" asp-action="Profile" asp-route-id="@null" class="active">
             <i class="far fa-user-circle" style="width: 23px; height: 23px; margin-right: 3px; margin-left: 2px"></i>
             <span>Profile</span>
         </a>
@@ -78,39 +78,13 @@
 
 <div class="sidenav sidenav-right">
     <div class="wrapper">
-        <div class="rounded-box" id="postterSearchBar">
+        <form class="rounded-box" id="postterSearchBar" method="get" asp-controller="Home" asp-action="Search">
             <i class="fas fa-search" style="color: var(--darkGray); padding: 10px 0 10px 20px;"></i>
-            <input class="postter-form" type="search" id="postterSearch" placeholder="Search in Postter">
-        </div>
-        <div class="rounded-box">
-            <p class="bold-text">Following</p>
-            <hr style="border-color: var(--darkGray); padding: 0 10px; margin: 0">
-            
-            <div class="row m-0 p-3">
-                <div class="col-2 p-0">
-                    <img class="avatar-img-sm"
-                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
-                </div>
-                <div class="col-6 p-0 ml-3 pl-2">
-                    <p class="semi-bold-text m-0 p-0">BRUH</p>
-                    <p class="secondary-text m-0 p-0">@@bruh_666</p>
-                </div>
-            </div>
-            <hr style="border-color: var(--darkGray); padding: 0 10px; margin: 0">
-
-            <div class="row m-0 p-3">
-                <div class="col-2 p-0">
-                    <img class="avatar-img-sm"
-                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
-                </div>
-                <div class="col-6 p-0 ml-3 pl-2">
-                    <p class="semi-bold-text m-0 p-0">BRUH</p>
-                    <p class="secondary-text m-0 p-0">@@bruh_666</p>
-                </div>
-            </div>
-        </div>
+            <input name="searchString" class="postter-form" type="search" id="postterSearch" placeholder="Search in Postter">
+            <input type="submit" style="position: absolute; left: -9999px;">
+        </form>
         <hr style="border-color: var(--darkGray);">
-        <p class="secondary-text">© Postter, Inc., 2021.</p>
+        <a class="secondary-text" asp-controller="Home" asp-action="About">© Postter, Inc., 2021.</a>
     </div>
 </div>
 

@@ -9,5 +9,6 @@ namespace Postter.Domain.Interfaces
     {
         IEnumerable<Post> GetPostsByUserId(string userId);
         Task AddPost(Post post);
+        IEnumerable<Post> GetPostsBySearchString(string searchString);
     }
 }

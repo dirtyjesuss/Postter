@@ -8,5 +8,6 @@ namespace Postter.Application.Interfaces
     {
         PostViewModel GetPostsByUserId(string userId);
         Task AddPost(Post post);
+        PostViewModel GetPostsBySearchString(string searchString);
     }
 }

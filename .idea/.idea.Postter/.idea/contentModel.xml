@@ -143,7 +143,9 @@
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="IndexViewModel.cs" t="Include" />
+          <e p="PageViewModel.cs" t="Include" />
           <e p="ProfileViewModel.cs" t="Include" />
+          <e p="SearchViewModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -171,6 +173,7 @@
             <e p="About.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="Privacy.cshtml" t="Include" />
+            <e p="Search.cshtml" t="Include" />
           </e>
           <e p="Profile" t="Include">
             <e p="Profile.cshtml" t="Include" />

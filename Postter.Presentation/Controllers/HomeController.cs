@@ -67,14 +67,46 @@ namespace Postter.Presentation.Controllers
             return View();
         }
         [AllowAnonymous]
-        public IActionResult About()
+        public async Task<IActionResult> About()
         {
-            return View();
+            var model = new IndexViewModel
+            {
+                CurrentUser = await _userManager.GetUserAsync(User),
+                PostViewModel = null
+            };
+            return View(model);
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+        }
+
+        public async Task<IActionResult> Search(string searchString, bool isFollowingPosts = false, int page = 1)
+        {
+            var pageSize = 4;
+            
+            var currentUser = await _userManager.GetUserAsync(User);
+            
+            var posts = _postService.GetPostsBySearchString(searchString).Posts;
+            if (isFollowingPosts)
+            {
+                posts = posts.Where(p => currentUser.Following.Any(f => f.FollowsId == p.Author.Id));
+            }
+
+            var count = posts.Count();
+            var items = posts.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+            var model = new SearchViewModel
+            {
+                CurrentUser = currentUser,
+                Posts = items,
+                SearchString = searchString,
+                IsFollowingPosts = isFollowingPosts,
+                PageViewModel = new PageViewModel(count, page, pageSize)
+            };
+
+            return View(model);
         }
 
         [HttpPost]
@@ -84,7 +116,10 @@ namespace Postter.Presentation.Controllers
 
             var post = new Post
             {
-                UserId = currentUser.Id, Author = currentUser, PostedTime = DateTime.Now, Text = text ?? "bruh"
+                UserId = currentUser.Id, 
+                Author = currentUser, 
+                PostedTime = DateTime.Now, 
+                Text = text ?? "bruh"
             };
             
             if (uploadedFile != null)

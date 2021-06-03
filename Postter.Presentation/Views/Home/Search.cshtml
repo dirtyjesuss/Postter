@@ -1,0 +1,52 @@
+@model SearchViewModel
+@{
+    ViewData["Title"] = "Search result for " + "\"" + Model.SearchString + "\"";
+}
+
+<form class="postter-box" method="get" asp-controller="Home" asp-action="Search">
+    <div class="rounded-box" id="postterSearchBar" style="background-color: transparent; margin-top: 0;">
+        <i class="fas fa-search" style="color: var(--darkGray); padding: 10px 0 10px 20px;"></i>
+        <input name="searchString" type="search" id="postterSearch" placeholder="Search in Postter"
+               style="background-color: transparent; color: white; width: auto;" value="@Model.SearchString">
+        <input type="submit" style="position: absolute; left: -9999px">
+    </div>
+    <div class="p-2">
+        @if (Model.IsFollowingPosts)
+        {
+            <input type="checkbox" checked="checked" value="true" name="isFollowingPosts">
+        }
+        else
+        {
+            <input type="checkbox" value="true" name="isFollowingPosts">
+        }
+        <span class="text-white small">Show only following's posts</span>
+    </div>
+</form>
+
+@foreach (var post in Model.Posts)
+{
+    @await Html.PartialAsync("_Post", post)
+}
+
+
+<div class="postter-box">
+    <div class="d-flex justify-content-around p-3">
+        @if (Model.PageViewModel.HasPreviousPage)
+        {
+            <a asp-controller="Home" asp-action="Search" asp-route-searchString="@Model.SearchString" asp-route-isFollowingPosts="@Model.IsFollowingPosts" asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+               class="btn btn-outline-light">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+                Back
+            </a>
+        }
+        @if (Model.PageViewModel.HasNextPage)
+        {
+            <a asp-controller="Home" asp-action="Search" asp-route-searchString="@Model.SearchString" asp-route-isFollowingPosts="@Model.IsFollowingPosts" asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+               class="btn btn-outline-light">
+                Forward
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        }
+    </div>
+    <p class="text-white text-center small p-2">@Model.PageViewModel.PageNumber page of @Model.PageViewModel.TotalPages</p>
+</div>

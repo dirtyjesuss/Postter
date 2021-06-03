@@ -2686,7 +2686,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Domain/1.0.0": {
         "type": "project",
@@ -2699,7 +2702,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Domain.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Postter.Infrastructure.Data/1.0.0": {
         "type": "project",
@@ -2720,7 +2726,10 @@
         },
         "runtime": {
           "bin/placeholder/Postter.Infrastructure.Data.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -8688,6 +8697,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -1,39 +1,30 @@
+@using Castle.Core.Internal
 @model Postter.Domain.Models.Post
 
 <div class="postter-box postter-box-post">
     <div class="row m-0">
         <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
-            <img class="avatar-img-sm"
-                 src="@Model.Author.Image_path" alt="No avatar">
+            @if (Model.Author.Image_path.IsNullOrEmpty())
+            {
+                <img class="avatar-img-sm"
+                     src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+            }
+            else
+            {
+                <img class="avatar-img-sm"
+                     src="@Model.Author.Image_path">
+            }
         </div>
         <div class="col-10 pl-0 pr-5 py-4">
-            <span class="semi-bold-text"><a asp-controller="Profile" asp-action="Profile" asp-route-id="@Model.Author.Id">@Model.Author.UserName</a></span><span class="secondary-text pl-2">@Model.PostedTime.ToString("MM/dd/yyyy HH:mm")</span>
+            <span class="semi-bold-text">
+                <a asp-controller="Profile" asp-action="Profile" asp-route-id="@Model.Author.Id">@Model.Author.UserName</a>
+            </span><span class="secondary-text pl-2">@Model.PostedTime.ToString("MM/dd/yyyy HH:mm")</span>
             <p style="color: white">@Model.Text</p>
             @if (Model.AttachmentPath != null)
             {
                 <img class="content-image"
                      src="@Model.AttachmentPath" alt="Cannot load image">
             }
-            <div class="row m-0 pt-4 d-flex justify-content-center">
-                <div class="col-4 p-0">
-                    <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
-                        <i class="far fa-heart"></i>
-                    </button>
-                    <span class="secondary-text">11.2k</span>
-                </div>
-                <div class="col-4 p-0">
-                    <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
-                        <i class="fas fa-retweet"></i>
-                    </button>
-                    <span class="secondary-text">11.2k</span>
-                </div>
-                <div class="col-4 p-0">
-                    <button class="postter-icon-button" style="color: var(--darkGray); font-size: 23px">
-                        <i class="far fa-comment"></i>
-                    </button>
-                    <span class="secondary-text">11.2k</span>
-                </div>
-            </div>
         </div>
     </div>
 </div>

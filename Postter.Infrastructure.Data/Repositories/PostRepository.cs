@@ -29,5 +29,10 @@ namespace Postter.Infrastructure.Data.Repositories
             await _context.Posts.AddAsync(post);
             await _context.SaveChangesAsync();
         }
+
+        public IEnumerable<Post> GetPostsBySearchString(string searchString)
+        {
+            return _context.Posts.Where(p => p.Text.ToLower().Contains(searchString)).ToList();
+        }
     }
 }

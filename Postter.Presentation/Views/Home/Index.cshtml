@@ -3,9 +3,9 @@
 @{
     ViewData["Title"] = "Main page";
 }
- 
- 
-@if(User.Identity.IsAuthenticated)
+
+
+@if (User.Identity.IsAuthenticated)
 {
     <!--Form-->
     <form class="postter-box" method="post" asp-controller="Home" asp-action="CreatePost"
@@ -13,8 +13,16 @@
           data-ajax-method="post" data-ajax-mode="before" data-ajax-update="#content" data-ajax-confirm="Are you sure?">
         <div class="row m-0">
             <div class="col-2 pl-3 pt-3" style="width: max-content; flex: 0;">
-                <img class="avatar-img-sm"
-                     src="@Model.CurrentUser?.Image_path" alt="404">
+                @if (Model.CurrentUser.Image_path is null)
+                {
+                    <img class="avatar-img-sm"
+                         src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                }
+                else
+                {
+                    <img class="avatar-img-sm"
+                         src="@Model.CurrentUser?.Image_path">
+                }
             </div>
             <div class="col-10 px-0 py-4">
                 <div class="pr-5">
@@ -44,7 +52,7 @@
             </div>
         </div>
     </form>
-    
+
     <script>
         $('#postButton').click(function() {
             $('#hiddenTextInput').val($('#textSpan').html());

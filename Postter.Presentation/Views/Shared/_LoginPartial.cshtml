@@ -1,5 +1,4 @@
-﻿
-@using Microsoft.AspNetCore.Identity
+﻿@using Microsoft.AspNetCore.Identity
 @using Postter.Domain.Models
 @inject SignInManager<User> SignInManager
 @inject UserManager<User> UserManager
@@ -17,7 +16,19 @@
     <a class="profile-preview" asp-controller="Profile" asp-action="Profile" asp-route-id="@null">
         <div class="row m-0">
             <div class="col-2 p-0">
-                <img class="avatar-img-sm" src="@Model.CurrentUser?.Image_path" alt="404">
+                @if (Model.CurrentUser != null)
+                {
+                    if (Model.CurrentUser.Image_path is null)
+                    {
+                        <img class="avatar-img-sm"
+                             src="https://i.pinimg.com/originals/a6/e8/1b/a6e81b2bb0685ebab1d7b2f15283b7e4.jpg">
+                    }
+                    else
+                    {
+                        <img class="avatar-img-sm"
+                             src="@Model.CurrentUser?.Image_path">
+                    }
+                }
             </div>
             <div class="col-5 p-0 ml-3 pl-4x">
                 <p class="semi-bold-text m-0 p-0">

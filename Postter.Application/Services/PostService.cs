@@ -22,6 +22,14 @@ namespace Postter.Application.Services
                 Posts = _postRepository.GetPostsByUserId(userId)
             };
         }
+        
+        public PostViewModel GetPostsBySearchString(string searchString)
+        {
+            return new PostViewModel()
+            {
+                Posts = _postRepository.GetPostsBySearchString(searchString.ToLower())
+            };
+        }
 
         public async Task AddPost(Post post)
         {
