@@ -202,6 +202,7 @@
           <e p="css" t="Include">
             <e p="site.css" t="Include" />
             <e p="style.css" t="Include" />
+            <e p="style.min.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="files" t="Include">
@@ -211,6 +212,7 @@
           </e>
           <e p="js" t="Include">
             <e p="script.js" t="Include" />
+            <e p="script.min.js" t="Include" />
             <e p="site.js" t="Include" />
           </e>
           <e p="lib" t="Include">

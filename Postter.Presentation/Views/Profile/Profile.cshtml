@@ -20,7 +20,11 @@
     @if (Model.IsCurrentUser)
     {
         <div class="d-flex justify-content-end pt-3 pr-3">
-            <button class="postter-button">Edit</button>
+        <button class="postter-button">
+        <a class="text-white" href="~/Profile.html?id=0">
+            Edit 
+        </a>
+        </button>
         </div>
     }
     else
