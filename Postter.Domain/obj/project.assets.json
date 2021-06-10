@@ -523,19 +523,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ruslankhanov/.nuget/packages/": {}
+    "C:\\Users\\mezin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/Postter.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Domain\\Postter.Domain.csproj",
       "projectName": "Postter.Domain",
-      "projectPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/Postter.Domain.csproj",
-      "packagesPath": "/Users/ruslankhanov/.nuget/packages/",
-      "outputPath": "/Users/ruslankhanov/Documents/IT/Postter/Postter.Domain/obj/",
+      "projectPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Domain\\Postter.Domain.csproj",
+      "packagesPath": "C:\\Users\\mezin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ruslankhanov/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mezin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -582,7 +582,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

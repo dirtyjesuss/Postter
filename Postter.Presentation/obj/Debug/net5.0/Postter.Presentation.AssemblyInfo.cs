@@ -11,6 +11,12 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Postter.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Application", "Postter.Application.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Postter.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Domain", "Postter.Domain.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Postter.Infrastructure.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nul" +
+    "l", "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.Data", "Postter.Infrastructure.Data.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Postter.Infrastructure.IoC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" +
+    "", "C:\\Users\\mezin\\Desktop\\Postter\\Postter.Infrastructure.IoC", "Postter.Infrastructure.IoC.csproj", "0")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Postter.Presentation-276F24CF-155D-4495-AA66-47C5F66CDBFA")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Postter.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
