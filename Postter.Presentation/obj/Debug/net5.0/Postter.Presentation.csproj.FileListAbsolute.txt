@@ -641,3 +641,4 @@ C:/Users/mezin/Desktop/Postter/Postter.Presentation/obj/Debug/net5.0/ref/Postter
 C:/Users/mezin/Desktop/Postter/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.pdb
 C:/Users/mezin/Desktop/Postter/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.genruntimeconfig.cache
 /Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Home/Search.cshtml.g.cs
+/Users/ruslankhanov/Documents/IT/Postter/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Notifications/Index.cshtml.g.cs

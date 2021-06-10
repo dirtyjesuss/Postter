@@ -26,6 +26,7 @@ using Postter.Domain.Models;
 using Postter.Infrastructure.Data;
 using Postter.Infrastructure.Data.Context;
 using Postter.Infrastructure.IoC;
+using Postter.Presentation.Hubs;
 using CookieAuthenticationDefaults = Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults;
 
 namespace Postter.Presentation
@@ -43,6 +44,13 @@ namespace Postter.Presentation
         {
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSignalR();
+            
+            services.AddSignalR(hubOptions =>
+            {
+                hubOptions.EnableDetailedErrors = true;
+                hubOptions.KeepAliveInterval = System.TimeSpan.FromMinutes(1);
+            });
 
             RegisterServices(services);
 
@@ -90,6 +98,7 @@ namespace Postter.Presentation
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+                endpoints.MapHub<ChatHub>("/chat");
             });
         }
 

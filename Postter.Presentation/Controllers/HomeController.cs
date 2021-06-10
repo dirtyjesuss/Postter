@@ -24,7 +24,7 @@ using Postter.Infrastructure.Data.Context;
 
 namespace Postter.Presentation.Controllers
 {
-    [Authorize(Roles = "employee,admin")]
+    //[Authorize(Roles = "employee,admin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

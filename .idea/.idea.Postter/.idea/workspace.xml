@@ -23,26 +23,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8285149-2c4b-40b5-9426-602d91c6bca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/script.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/Controllers/NotificationsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/Hubs/ChatHub.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/Views/Notifications/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Notifications/Index.cshtml.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/files/Awesome Wallpapers - wallhaven_cc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/signalr/dist/browser/signalr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/signalr/dist/browser/signalr.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Postter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Application/obj/Debug/net5.0/Postter.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Application/obj/Debug/net5.0/Postter.Application.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Infrastructure.Data/obj/Debug/net5.0/Postter.Infrastructure.Data.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Views/Profile/Profile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Views/Profile/Profile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/Postter.Presentation.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/libman.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/libman.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/ref/Postter.Presentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/bin/Debug/net5.0/ref/Postter.Presentation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/libman.json" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/libman.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Home/Search.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Home/Search.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Profile/Profile.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Profile/Profile.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Postter.Presentation.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/ref/Postter.Presentation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/obj/Debug/net5.0/ref/Postter.Presentation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Postter.Presentation/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Postter.Presentation/wwwroot/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,31 +79,27 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E2B2C84-E0DA-4554-B416-8EA71B0D085D/07/1ef9172e/IdentityExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42ED81B8-4EA6-4A20-9C8A-62C83D9D73F9/16/97c66964/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42ED81B8-4EA6-4A20-9C8A-62C83D9D73F9/0d/0da9ce6a/AsyncTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1D8DC58B-0E77-41C7-94ED-35D330ADA41F/10F/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/59A5442C-FE38-4E7C-A692-E4EDC9C96A96/E/Controller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/06C0E065-6D20-4209-AA9B-0CDB5D28D2F6/12/RazorView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1D8DC58B-0E77-41C7-94ED-35D330ADA41F/38/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42ED81B8-4EA6-4A20-9C8A-62C83D9D73F9/16/97c66964/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/01A874B6-3195-42F0-889A-4481D640F707/8/DiagnosticListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SuperChat/Views/Chat/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42ED81B8-4EA6-4A20-9C8A-62C83D9D73F9/0d/0da9ce6a/AsyncTaskMethodBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42ED81B8-4EA6-4A20-9C8A-62C83D9D73F9/69/37237ba9/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SuperChat/ChatHub.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1D8DC58B-0E77-41C7-94ED-35D330ADA41F/10F/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59A5442C-FE38-4E7C-A692-E4EDC9C96A96/86/12bb1505/PartialViewResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Postter.Presentation/package-lock.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Postter.Domain/Models/Post.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Postter.Domain/Models/Follower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/59A5442C-FE38-4E7C-A692-E4EDC9C96A96/86/12bb1505/PartialViewResult.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/59A5442C-FE38-4E7C-A692-E4EDC9C96A96/E/Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9E2B2C84-E0DA-4554-B416-8EA71B0D085D/07/1ef9172e/IdentityExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/css/style.css" />
-      <option value="$PROJECT_DIR$/Postter.Infrastructure.Data/Context/UsersDbContext.cs" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Data/ApplicationDbContext.cs" />
-      <option value="$PROJECT_DIR$/Postter.Domain/Interfaces/IPostService.cs" />
-      <option value="$PROJECT_DIR$/Postter.Domain/Interfaces/IBookRepository.cs" />
       <option value="$PROJECT_DIR$/Postter.Domain/Postter.Domain.csproj" />
       <option value="$PROJECT_DIR$/Postter.Application/ViewModels/PostViewModel.cs" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/AccountController.cs" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/98babb85-5674-4886-8f63-f04a07831d84/console.sql" />
       <option value="$PROJECT_DIR$/Postter.Infrastructure.Data/Migrations/ApplicationDb/20210516142231_Init.cs" />
       <option value="$PROJECT_DIR$/Postter.Infrastructure.Data/Migrations/ApplicationDb/20210516144915_PostModelUpdate1.cs" />
@@ -113,7 +120,6 @@
       <option value="$PROJECT_DIR$/Postter.Domain/Models/Follower.cs" />
       <option value="$PROJECT_DIR$/Postter.Infrastructure.Data/Repositories/FollowerRepository.cs" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/ProfileController.cs" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Startup.cs" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/UserController.cs" />
       <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/Profile.html" />
       <option value="$PROJECT_DIR$/Postter.Domain/Models/UserInDialog.cs" />
@@ -131,11 +137,18 @@
       <option value="$PROJECT_DIR$/Postter.Infrastructure.Data/Repositories/PostRepository.cs" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Models/SearchViewModel.cs" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Models/PageViewModel.cs" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/HomeController.cs" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Views/Home/Search.cshtml" />
-      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/Postter.Presentation/Views/Profile/Profile.cshtml" />
       <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/js/script.min.js" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/AccountController.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Hub/ChatHub.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Hubs/ChatHub.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/NotificationsController.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/wwwroot/css/style.css" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Controllers/HomeController.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Shared/_Layout.cshtml" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Startup.cs" />
+      <option value="$PROJECT_DIR$/Postter.Presentation/Views/Notifications/Index.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qNkzO3o1knEZk4ODw5ZV8dG4Xc" />
@@ -238,7 +251,9 @@
       <workItem from="1622307636329" duration="3667000" />
       <workItem from="1622633712947" duration="8873000" />
       <workItem from="1622671861472" duration="6374000" />
-      <workItem from="1622704058438" duration="1083000" />
+      <workItem from="1622704058438" duration="2531000" />
+      <workItem from="1623068984141" duration="208000" />
+      <workItem from="1623331089193" duration="3707000" />
     </task>
     <servers />
   </component>
@@ -315,13 +330,39 @@
           <line>108</line>
           <properties documentPath="$PROJECT_DIR$/Postter.Presentation/Controllers/HomeController.cs" initialLine="107" containingFunctionPresentation="method 'Search'">
             <startOffsets>
-              <option value="4129" />
+              <option value="4131" />
             </startOffsets>
             <endOffsets>
-              <option value="4148" />
+              <option value="4150" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Postter.Presentation/Controllers/AccountController.cs</url>
+          <line>60</line>
+          <properties documentPath="$PROJECT_DIR$/Postter.Presentation/Controllers/AccountController.cs" initialLine="60" containingFunctionPresentation="method 'Register'">
+            <startOffsets>
+              <option value="2079" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2145" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Postter.Presentation/Hubs/ChatHub.cs</url>
+          <line>9</line>
+          <properties documentPath="$PROJECT_DIR$/Postter.Presentation/Hubs/ChatHub.cs" initialLine="9" containingFunctionPresentation="method 'Send'">
+            <startOffsets>
+              <option value="210" />
+            </startOffsets>
+            <endOffsets>
+              <option value="255" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Postter.Presentation/wwwroot/js/site.js</url>

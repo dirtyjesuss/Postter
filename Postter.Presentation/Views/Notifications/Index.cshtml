@@ -1,0 +1,40 @@
+@model IndexViewModel
+
+@{
+    ViewData["Title"] = "Notifications";
+}
+
+<div id="notificationsBox" class="postter-box">
+</div>
+
+@if (User.IsInRole("admin"))
+{
+    <form class="fixed-bottom fixed-bottom-container p-3 bordered">
+        <p class="text-white">Type your message</p>
+        <textarea id="message" class="w-100" style="background-color: black; color: white"></textarea>
+        <input id="sendBtn" class="postter-button" type="button" value="Send">
+    </form>
+}
+
+<script src="/js/signalr/dist/browser/signalr.min.js"></script>
+<script>
+        const hubConnection = new signalR.HubConnectionBuilder()
+            .withUrl("/chat")
+            .build();
+        
+        hubConnection.on("Send", function (data) {
+         
+            let elem = document.createElement("p");
+            elem.className = "text-white";
+            elem.appendChild(document.createTextNode(data));
+            let firstElem = document.getElementById("notificationsBox").firstChild;
+            document.getElementById("notificationsBox").insertBefore(elem, firstElem);
+        });
+        
+        document.getElementById("sendBtn").addEventListener("click", function (e) {
+            let message = document.getElementById("message").value;
+            hubConnection.invoke("Send", message);
+        }); 
+        
+        hubConnection.start();
+</script>

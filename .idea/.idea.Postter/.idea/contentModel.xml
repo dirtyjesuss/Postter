@@ -134,11 +134,15 @@
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+          <e p="NotificationsController.cs" t="Include" />
           <e p="ProfileController.cs" t="Include" />
           <e p="RolesController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
         <e p="Data" t="Include" />
+        <e p="Hubs" t="Include">
+          <e p="ChatHub.cs" t="Include" />
+        </e>
         <e p="libman.json" t="Include" />
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
@@ -175,6 +179,9 @@
             <e p="Privacy.cshtml" t="Include" />
             <e p="Search.cshtml" t="Include" />
           </e>
+          <e p="Notifications" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
           <e p="Profile" t="Include">
             <e p="Profile.cshtml" t="Include" />
           </e>
@@ -206,13 +213,23 @@
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="files" t="Include">
+            <e p="Awesome Wallpapers - wallhaven_cc.png" t="Include" />
             <e p="bad2032089daf5abf495f9de71144402.png" t="Include" />
+            <e p="check-mark-2.png" t="Include" />
             <e p="Screenshot 2021-05-16 at 16.03.00.png" t="Include" />
             <e p="tumblr_nt6sl4wGhv1rhenqeo1_500.png" t="Include" />
           </e>
           <e p="js" t="Include">
             <e p="script.js" t="Include" />
             <e p="script.min.js" t="Include" />
+            <e p="signalr" t="Include">
+              <e p="dist" t="Include">
+                <e p="browser" t="Include">
+                  <e p="signalr.js" t="Include" />
+                  <e p="signalr.min.js" t="Include" />
+                </e>
+              </e>
+            </e>
             <e p="site.js" t="Include" />
           </e>
           <e p="lib" t="Include">
